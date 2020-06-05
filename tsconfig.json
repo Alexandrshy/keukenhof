@@ -1,0 +1,27 @@
+{
+    "compilerOptions": {
+        "outDir": "dist",
+        "module": "es2015",
+        "target": "es6",
+        "lib": [
+            "es5",
+            "es6",
+            "es7",
+            "es2017",
+            "dom"
+        ],
+        "sourceMap": true,
+        "moduleResolution": "node",
+        "baseUrl": "src",
+        "skipLibCheck": true,
+        "strict": true,
+        "declaration": true
+    },
+    "include": [
+        "src",
+        "typeScript"
+    ],
+    "exclude": [
+        "node_modules",
+    ]
+}
