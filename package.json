@@ -1,5 +1,5 @@
 {
-  "name": "como-north",
+  "name": "keukenhof",
   "version": "1.0.0",
   "description": "GitHub template for starting new projects",
   "main": "./dist/index.js",
@@ -10,7 +10,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/Alexandrshy/como-north"
+    "url": "https://github.com/Alexandrshy/keukenhof"
   },
   "author": "Alex Shualev <alexandrshy@gmail.com>",
   "license": "MIT",
@@ -20,9 +20,9 @@
     "package"
   ],
   "bugs": {
-    "url": "https://github.com/Alexandrshy/como-north/issues"
+    "url": "https://github.com/Alexandrshy/keukenhof/issues"
   },
-  "homepage": "https://github.com/Alexandrshy/como-north",
+  "homepage": "https://github.com/Alexandrshy/keukenhof",
   "husky": {
     "hooks": {
       "pre-commit": "lint-staged",
