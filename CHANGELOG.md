@@ -1,3 +1,15 @@
+# [1.1.0](https://github.com/Alexandrshy/keukenhof/compare/v1.0.0...v1.1.0) (2020-06-07)
+
+
+### Bug Fixes
+
+* fixed ts error ([1ca3a47](https://github.com/Alexandrshy/keukenhof/commit/1ca3a476710b605c9c2ef32e6dda97a97e6776f2))
+
+
+### Features
+
+* added minimal library functionality ([6d06831](https://github.com/Alexandrshy/keukenhof/commit/6d068316fc3b1cc31b13d768f6ab2968d76ed84b))
+
 # 1.0.0 (2020-06-05)
 
 
