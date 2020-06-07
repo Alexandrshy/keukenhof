@@ -41,9 +41,7 @@ export const Keukenhof = ((): KeukenhofType => {
         registerNodes(nodeList: HTMLElement[]) {
             nodeList
                 .filter(Boolean)
-                .forEach((element) =>
-                    element.addEventListener('click', (event) => this.open(event)),
-                );
+                .forEach((element) => element.addEventListener('click', () => this.open()));
         }
 
         /**
