@@ -1,7 +1,7 @@
 {
   "name": "keukenhof",
   "version": "1.0.0",
-  "description": "GitHub template for starting new projects",
+  "description": "Lightweight modal library 🌷",
   "main": "./dist/index.js",
   "module": "./dist/index.es.js",
   "types": "./dist/index.d.ts",
@@ -15,9 +15,10 @@
   "author": "Alex Shualev <alexandrshy@gmail.com>",
   "license": "MIT",
   "keywords": [
-    "template",
     "javascript",
-    "package"
+    "modal",
+    "dialog",
+    "popup"
   ],
   "bugs": {
     "url": "https://github.com/Alexandrshy/keukenhof/issues"
