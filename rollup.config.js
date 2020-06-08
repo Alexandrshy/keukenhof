@@ -14,11 +14,12 @@ export default {
         {
             file: pkg.main,
             format: 'umd',
-            name: 'ComoNorth',
+            name: 'Keukenhof',
         },
         {
             file: pkg.module,
             format: 'es',
+            name: 'Keukenhof',
         },
     ],
     plugins: [
