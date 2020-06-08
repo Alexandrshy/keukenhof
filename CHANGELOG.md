@@ -1,3 +1,10 @@
+## [1.1.2](https://github.com/Alexandrshy/keukenhof/compare/v1.1.1...v1.1.2) (2020-06-08)
+
+
+### Bug Fixes
+
+* fixed module name in rollup ([715e892](https://github.com/Alexandrshy/keukenhof/commit/715e89236150a6ae2c8f7e78670b42aced6ea732))
+
 ## [1.1.1](https://github.com/Alexandrshy/keukenhof/compare/v1.1.0...v1.1.1) (2020-06-08)
 
 
