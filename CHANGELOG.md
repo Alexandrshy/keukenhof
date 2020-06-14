@@ -1,3 +1,10 @@
+# [1.2.0](https://github.com/Alexandrshy/keukenhof/compare/v1.1.2...v1.2.0) (2020-06-14)
+
+
+### Features
+
+* added build for dev ([8cdd513](https://github.com/Alexandrshy/keukenhof/commit/8cdd513b4ef61e9cd53e0fb30b56334fcd84c4ba))
+
 ## [1.1.2](https://github.com/Alexandrshy/keukenhof/compare/v1.1.1...v1.1.2) (2020-06-08)
 
 
