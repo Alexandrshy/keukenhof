@@ -41,7 +41,8 @@
     "lint": "eslint '*/**/*.{js,ts}'",
     "build": "npm run build:clean && npm run build:lib",
     "build:clean": "rimraf dist",
-    "build:lib": "rollup -c",
+    "build:lib": "rollup --config config/rollup/rollup.config.lib.js",
+    "build:dev": "rollup --config config/rollup/rollup.config.dev.js",
     "finish": "npm run lint && npm run types"
   },
   "devDependencies": {
@@ -68,6 +69,8 @@
     "lint-staged": "^10.2.6",
     "prettier": "^2.0.5",
     "rollup": "^2.10.5",
+    "rollup-plugin-livereload": "^1.3.0",
+    "rollup-plugin-serve": "^1.0.1",
     "rollup-plugin-terser": "^6.1.0",
     "rollup-plugin-typescript2": "^0.27.1",
     "semantic-release": "^17.0.7",
