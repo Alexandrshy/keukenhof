@@ -1,3 +1,10 @@
+## [1.2.1](https://github.com/Alexandrshy/keukenhof/compare/v1.2.0...v1.2.1) (2020-06-15)
+
+
+### Bug Fixes
+
+* added the watch to the script and updated readme ([0830f2d](https://github.com/Alexandrshy/keukenhof/commit/0830f2d94230f30e5b5c9108fbc667893120bf1c))
+
 # [1.2.0](https://github.com/Alexandrshy/keukenhof/compare/v1.1.2...v1.2.0) (2020-06-14)
 
 
