@@ -42,7 +42,7 @@
     "build": "npm run build:clean && npm run build:lib",
     "build:clean": "rimraf dist",
     "build:lib": "rollup --config config/rollup/rollup.config.lib.js",
-    "build:dev": "rollup --config config/rollup/rollup.config.dev.js",
+    "build:dev": "rollup --config config/rollup/rollup.config.dev.js -w",
     "finish": "npm run lint && npm run types"
   },
   "devDependencies": {

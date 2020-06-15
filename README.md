@@ -60,15 +60,13 @@ Keukenhof.init();
 * Add optional focus control inside the modal window
 * Add support for CSS animations
 * Add accessibility support
-* Add a dev server for local development
 * Write documentation
+* ~~Add a dev server for local development~~
 
 ## Contribute
 
-The current build doesn't contain a dev server, but you can run `build` script to build the library and check for changes
-
-```
-git clone git@github.com:Alexandrshy/keukenhof.git
-cd keukenhof
-yarn
-```
+1. Clone the repository `git@github.com:Alexandrshy/keukenhof.git`
+2. Go to the project directory `cd keukenhof`
+3. Install dependencies `yarn`
+4. Run dev build with auto rebuild after any changes `yarn build:dev`
+5. Complete your improvements, commit changes and submit your pull request for review code
