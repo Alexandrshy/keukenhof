@@ -1,3 +1,10 @@
+## [1.2.2](https://github.com/Alexandrshy/keukenhof/compare/v1.2.1...v1.2.2) (2020-06-15)
+
+
+### Bug Fixes
+
+* fixed path ([9083bf9](https://github.com/Alexandrshy/keukenhof/commit/9083bf95628ba456d19e77b2d1e9ea8b3b926f41))
+
 ## [1.2.1](https://github.com/Alexandrshy/keukenhof/compare/v1.2.0...v1.2.1) (2020-06-15)
 
 
