@@ -1,3 +1,10 @@
+## [1.2.3](https://github.com/Alexandrshy/keukenhof/compare/v1.2.2...v1.2.3) (2020-06-15)
+
+
+### Bug Fixes
+
+* fixed gitignore ([c11c973](https://github.com/Alexandrshy/keukenhof/commit/c11c973bc2344ea547f800128ba37882a36b0521))
+
 ## [1.2.2](https://github.com/Alexandrshy/keukenhof/compare/v1.2.1...v1.2.2) (2020-06-15)
 
 
