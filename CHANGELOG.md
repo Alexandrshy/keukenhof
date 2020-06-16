@@ -1,3 +1,10 @@
+## [1.2.4](https://github.com/Alexandrshy/keukenhof/compare/v1.2.3...v1.2.4) (2020-06-16)
+
+
+### Bug Fixes
+
+* removed package-lock ([6852aee](https://github.com/Alexandrshy/keukenhof/commit/6852aeefaf58f82e7363fa27a7a9d400314763c7))
+
 ## [1.2.3](https://github.com/Alexandrshy/keukenhof/compare/v1.2.2...v1.2.3) (2020-06-15)
 
 
