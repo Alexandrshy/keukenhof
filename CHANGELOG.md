@@ -1,3 +1,10 @@
+# [1.3.0](https://github.com/Alexandrshy/keukenhof/compare/v1.2.4...v1.3.0) (2020-06-22)
+
+
+### Features
+
+* added the ability to block the scroll, added the open and close methods by the selector ([2949a0f](https://github.com/Alexandrshy/keukenhof/commit/2949a0f72e2fe01d1454659df02fafaaf70e2679))
+
 ## [1.2.4](https://github.com/Alexandrshy/keukenhof/compare/v1.2.3...v1.2.4) (2020-06-16)
 
 
