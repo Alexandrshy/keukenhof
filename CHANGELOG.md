@@ -1,3 +1,11 @@
+## [1.3.1](https://github.com/Alexandrshy/keukenhof/compare/v1.3.0...v1.3.1) (2020-06-22)
+
+
+### Bug Fixes
+
+* fixed README.md ([5456f5c](https://github.com/Alexandrshy/keukenhof/commit/5456f5c9a73f304a2ea139970506a47c7b48e026))
+* rewrote the scrollBehavior method ([23f98ef](https://github.com/Alexandrshy/keukenhof/commit/23f98ef4d810e152b19f1c77b9d9eb03b68d3b18))
+
 # [1.3.0](https://github.com/Alexandrshy/keukenhof/compare/v1.2.4...v1.3.0) (2020-06-22)
 
 
