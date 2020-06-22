@@ -36,7 +36,7 @@ export const Keukenhof = ((): KeukenhofType => {
             this.scrollBehavior = {
                 isDisabled: true,
                 container: 'body',
-                defaultValue: 'visible',
+                defaultValue: '',
                 ...scrollBehavior,
             };
 
@@ -116,18 +116,11 @@ export const Keukenhof = ((): KeukenhofType => {
          */
         changeScrollBehavior(value: 'disable' | 'enable') {
             if (!this.scrollBehavior.isDisabled) return;
-            const element = document.querySelector(this.scrollBehavior.container);
+            const element = document.querySelector<HTMLElement>(this.scrollBehavior.container);
             if (!element) return;
-            switch (value) {
-                case SCROLL_STATE.DISABLE:
-                    element.setAttribute('style', 'overflow: hidden;');
-                    break;
-                case SCROLL_STATE.ENABLE:
-                    element.setAttribute('style', `overflow: ${this.scrollBehavior.defaultValue};`);
-                    break;
-                default:
-                    break;
-            }
+            if (value === SCROLL_STATE.ENABLE)
+                element.style.overflow = this.scrollBehavior.defaultValue;
+            else if (value === SCROLL_STATE.DISABLE) element.style.overflow = 'hidden';
         }
     }
 
