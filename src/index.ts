@@ -153,7 +153,6 @@ export const Keukenhof = ((): KeukenhofType => {
      */
     const open = (selector: string, config?: ConfigType) => {
         const options = config || {};
-        if (modal) modal.removeEventListeners();
         modal = new Modal({...options, selector});
         modal.open();
     };
