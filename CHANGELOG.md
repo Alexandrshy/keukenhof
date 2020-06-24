@@ -1,3 +1,10 @@
+## [1.3.4](https://github.com/Alexandrshy/keukenhof/compare/v1.3.3...v1.3.4) (2020-06-24)
+
+
+### Bug Fixes
+
+* removed console.log and added rule for eslint ([846e214](https://github.com/Alexandrshy/keukenhof/commit/846e214102780b85abb8d90cd398a3855b55fb4c))
+
 ## [1.3.3](https://github.com/Alexandrshy/keukenhof/compare/v1.3.2...v1.3.3) (2020-06-24)
 
 
