@@ -40,8 +40,6 @@ export const Keukenhof = ((): KeukenhofType => {
                 ...scrollBehavior,
             };
 
-            console.log(888);
-
             this.registerNodes(triggers);
 
             this.onClick = this.onClick.bind(this);
