@@ -1,3 +1,10 @@
+## [1.3.2](https://github.com/Alexandrshy/keukenhof/compare/v1.3.1...v1.3.2) (2020-06-24)
+
+
+### Bug Fixes
+
+* canceled removeEventListeners when using the open method ([3ab4ea9](https://github.com/Alexandrshy/keukenhof/commit/3ab4ea9955a9f3aacf16c74d6bd5c5d9175d6b12))
+
 ## [1.3.1](https://github.com/Alexandrshy/keukenhof/compare/v1.3.0...v1.3.1) (2020-06-22)
 
 
