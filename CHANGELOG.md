@@ -1,3 +1,10 @@
+## [1.3.3](https://github.com/Alexandrshy/keukenhof/compare/v1.3.2...v1.3.3) (2020-06-24)
+
+
+### Bug Fixes
+
+* changed the order of checking the existence of an element and assignment ([41119c3](https://github.com/Alexandrshy/keukenhof/commit/41119c3be79ac68aa68f755f87dbd6071d7bd17b))
+
 ## [1.3.2](https://github.com/Alexandrshy/keukenhof/compare/v1.3.1...v1.3.2) (2020-06-24)
 
 
