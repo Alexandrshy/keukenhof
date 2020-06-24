@@ -40,6 +40,8 @@ export const Keukenhof = ((): KeukenhofType => {
                 ...scrollBehavior,
             };
 
+            console.log(888);
+
             this.registerNodes(triggers);
 
             this.onClick = this.onClick.bind(this);
@@ -80,8 +82,10 @@ export const Keukenhof = ((): KeukenhofType => {
          * @param {string} selector - Modal window selector to close
          */
         closeBySelector(selector: string) {
-            this.$modal = document.querySelector(selector);
-            if (this.$modal) this.close();
+            const element = document.querySelector<HTMLElement>(selector);
+            if (!element) return;
+            this.$modal = element;
+            this.close();
         }
 
         /**
