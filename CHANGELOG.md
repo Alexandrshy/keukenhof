@@ -1,3 +1,10 @@
+# [1.4.0](https://github.com/Alexandrshy/keukenhof/compare/v1.3.4...v1.4.0) (2020-06-27)
+
+
+### Features
+
+* added support for css animations ([ab3a38b](https://github.com/Alexandrshy/keukenhof/commit/ab3a38b064a18e17aa227eb51393aeb942983a3b))
+
 ## [1.3.4](https://github.com/Alexandrshy/keukenhof/compare/v1.3.3...v1.3.4) (2020-06-24)
 
 
