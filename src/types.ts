@@ -4,6 +4,7 @@ export type ConfigType = {
     openAttribute?: string;
     closeAttribute?: string;
     openClass?: string;
+    hasAnimation?: boolean;
     scrollBehavior?: {
         isDisabled?: boolean;
         container?: string;
@@ -16,6 +17,8 @@ export type ModalType = {
     close: (event?: Event) => void;
     removeEventListeners: () => void;
     closeBySelector: (selector: string) => void;
+    preparationOpeningModal: () => void;
+    preparationClosingModal: () => void;
 };
 
 export type KeukenhofType = {

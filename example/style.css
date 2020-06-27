@@ -4,6 +4,7 @@
   --pink-swan: #c3bbbb;
   --white-rgba: rgba(255, 255, 255, 0.6);
   --gallery-rgba: rgba(238, 238, 238, 0.4);
+  --animation: cubic-bezier(0.66, 0.28, 0.09, 0.53);
 }
 
 body {
@@ -24,6 +25,22 @@ img {
 
 .modal.isOpen {
   display: block;
+}
+
+.modal.isOpening {
+  animation: fadeIn .35s var(--animation);
+}
+
+.modal.isOpening .modal__container {
+  animation: downUp .35s var(--animation);
+}
+
+.modal.isClosing {
+  animation: fadeOut .35s var(--animation);
+}
+
+.modal.isClosing .modal__container {
+  animation: centerUp .35s var(--animation);
 }
 
 .modal__button {
@@ -93,4 +110,44 @@ img {
 .modal__desc {
   margin: 0 0 25px;
   line-height: 1.65;
+}
+
+@keyframes downUp {
+  0% {
+    transform: translateY(8%);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes centerUp {
+  0% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(-8%);
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
 }

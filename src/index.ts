@@ -1,5 +1,5 @@
 import {ConfigType, ModalType, KeukenhofType} from './types';
-import {ATTRIBUTES, SCROLL_STATE} from './consts';
+import {ATTRIBUTES, SCROLL_STATE, CLASS_NAMES} from './consts';
 
 export const Keukenhof = ((): KeukenhofType => {
     /**
@@ -10,6 +10,7 @@ export const Keukenhof = ((): KeukenhofType => {
         openAttribute: string;
         closeAttribute: string;
         openClass: string;
+        hasAnimation: boolean;
         scrollBehavior: {
             isDisabled: boolean;
             container: string;
@@ -27,12 +28,14 @@ export const Keukenhof = ((): KeukenhofType => {
             openAttribute = ATTRIBUTES.OPEN,
             closeAttribute = ATTRIBUTES.CLOSE,
             openClass = 'isOpen',
+            hasAnimation = false,
             scrollBehavior = {},
         }: ConfigType) {
             this.$modal = document.querySelector(selector);
             this.openAttribute = openAttribute;
             this.closeAttribute = closeAttribute;
             this.openClass = openClass;
+            this.hasAnimation = hasAnimation;
             this.scrollBehavior = {
                 isDisabled: true,
                 container: 'body',
@@ -63,15 +66,47 @@ export const Keukenhof = ((): KeukenhofType => {
             this.$modal?.classList.add(this.openClass);
             this.changeScrollBehavior(SCROLL_STATE.DISABLE);
             this.addEventListeners();
+            this.preparationOpeningModal();
+        }
+
+        /**
+         * Preparing a modal window for opening
+         */
+        preparationOpeningModal() {
+            if (this.hasAnimation) {
+                this.$modal?.classList.add(CLASS_NAMES.IS_OPENING);
+                const handler = () => {
+                    this.$modal?.classList.remove(CLASS_NAMES.IS_OPENING);
+                    this.$modal?.removeEventListener('animationend', handler);
+                };
+                this.$modal?.addEventListener('animationend', handler);
+            }
         }
 
         /**
          * Close modal window
          */
         close() {
-            this.$modal?.classList.remove(this.openClass);
             this.changeScrollBehavior(SCROLL_STATE.ENABLE);
             this.removeEventListeners();
+            this.preparationClosingModal();
+        }
+
+        /**
+         * Preparing a modal window for closing
+         */
+        preparationClosingModal() {
+            if (this.hasAnimation) {
+                this.$modal?.classList.add(CLASS_NAMES.IS_CLOSING);
+                const handler = () => {
+                    this.$modal?.classList.remove(CLASS_NAMES.IS_CLOSING);
+                    this.$modal?.classList.remove(this.openClass);
+                    this.$modal?.removeEventListener('animationend', handler);
+                };
+                this.$modal?.addEventListener('animationend', handler);
+            } else {
+                this.$modal?.classList.remove(this.openClass);
+            }
         }
 
         /**
