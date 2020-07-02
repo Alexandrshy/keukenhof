@@ -9,6 +9,7 @@ export const SCROLL_STATE = {
 } as const;
 
 export const CLASS_NAMES = {
+    IS_OPEN: 'isOpen',
     IS_OPENING: 'isOpening',
     IS_CLOSING: 'isClosing',
 } as const;

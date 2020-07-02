@@ -31,7 +31,7 @@ export const Keukenhof = ((): KeukenhofType => {
             triggers = [],
             openAttribute = ATTRIBUTES.OPEN,
             closeAttribute = ATTRIBUTES.CLOSE,
-            openClass = 'isOpen',
+            openClass = CLASS_NAMES.IS_OPEN,
             hasAnimation = false,
             scrollBehavior = {},
             onOpen = () => {},
