@@ -1,3 +1,10 @@
+# [1.5.0](https://github.com/Alexandrshy/keukenhof/compare/v1.4.0...v1.5.0) (2020-07-02)
+
+
+### Features
+
+* added support for callbacks and keyboard controls ([37d0f66](https://github.com/Alexandrshy/keukenhof/commit/37d0f66139d52a0f339b9a418a2e61e0fcffa277))
+
 # [1.4.0](https://github.com/Alexandrshy/keukenhof/compare/v1.3.4...v1.4.0) (2020-06-27)
 
 
