@@ -1,3 +1,10 @@
+## [1.5.2](https://github.com/Alexandrshy/keukenhof/compare/v1.5.1...v1.5.2) (2020-07-02)
+
+
+### Bug Fixes
+
+* used a constant for openClass ([0fc3dc1](https://github.com/Alexandrshy/keukenhof/commit/0fc3dc19886fafc6efb3dbd9829a3ab8b70b0399))
+
 ## [1.5.1](https://github.com/Alexandrshy/keukenhof/compare/v1.5.0...v1.5.1) (2020-07-02)
 
 
