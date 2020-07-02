@@ -17,14 +17,17 @@ export type ConfigType = {
 };
 
 export type ModalType = {
-    open: (event?: Event) => void;
-    close: (event?: Event) => void;
-    removeEventListeners: () => void;
-    closeBySelector: (selector: string) => void;
+    registerNodes: (nodeList: HTMLElement[]) => void;
+    open: () => void;
     preparationOpeningModal: () => void;
+    close: () => void;
     preparationClosingModal: () => void;
+    closeBySelector: (selector: string) => void;
     onClick: (event: Event) => void;
     onKeydown: (event: KeyboardEvent) => void;
+    addEventListeners: () => void;
+    removeEventListeners: () => void;
+    changeScrollBehavior: (value: 'disable' | 'enable') => void;
 };
 
 export type KeukenhofType = {
