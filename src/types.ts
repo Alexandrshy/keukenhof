@@ -10,6 +10,10 @@ export type ConfigType = {
         container?: string;
         defaultValue?: string;
     };
+    onOpen?: () => void;
+    onClose?: () => void;
+    beforeOpen?: () => boolean;
+    beforeClose?: () => boolean;
 };
 
 export type ModalType = {
@@ -19,6 +23,8 @@ export type ModalType = {
     closeBySelector: (selector: string) => void;
     preparationOpeningModal: () => void;
     preparationClosingModal: () => void;
+    onClick: (event: Event) => void;
+    onKeydown: (event: KeyboardEvent) => void;
 };
 
 export type KeukenhofType = {

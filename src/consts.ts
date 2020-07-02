@@ -12,3 +12,7 @@ export const CLASS_NAMES = {
     IS_OPENING: 'isOpening',
     IS_CLOSING: 'isClosing',
 } as const;
+
+export const KEY_CODE = {
+    ESC: 27,
+} as const;

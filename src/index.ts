@@ -1,5 +1,5 @@
 import {ConfigType, ModalType, KeukenhofType} from './types';
-import {ATTRIBUTES, SCROLL_STATE, CLASS_NAMES} from './consts';
+import {ATTRIBUTES, SCROLL_STATE, CLASS_NAMES, KEY_CODE} from './consts';
 
 export const Keukenhof = ((): KeukenhofType => {
     /**
@@ -7,6 +7,10 @@ export const Keukenhof = ((): KeukenhofType => {
      */
     class Modal {
         $modal: HTMLElement | null;
+        onOpen: () => void;
+        onClose: () => void;
+        beforeOpen: () => boolean;
+        beforeClose: () => boolean;
         openAttribute: string;
         closeAttribute: string;
         openClass: string;
@@ -30,8 +34,18 @@ export const Keukenhof = ((): KeukenhofType => {
             openClass = 'isOpen',
             hasAnimation = false,
             scrollBehavior = {},
+            onOpen = () => {},
+            onClose = () => {},
+            beforeOpen = () => true,
+            beforeClose = () => true,
         }: ConfigType) {
             this.$modal = document.querySelector(selector);
+
+            this.onOpen = onOpen;
+            this.onClose = onClose;
+            this.beforeOpen = beforeOpen;
+            this.beforeClose = beforeClose;
+
             this.openAttribute = openAttribute;
             this.closeAttribute = closeAttribute;
             this.openClass = openClass;
@@ -46,6 +60,7 @@ export const Keukenhof = ((): KeukenhofType => {
             this.registerNodes(triggers);
 
             this.onClick = this.onClick.bind(this);
+            this.onKeydown = this.onKeydown.bind(this);
         }
 
         /**
@@ -63,6 +78,8 @@ export const Keukenhof = ((): KeukenhofType => {
          * Open moda window
          */
         open() {
+            const isContinue = this.beforeOpen();
+            if (!isContinue) return;
             this.$modal?.classList.add(this.openClass);
             this.changeScrollBehavior(SCROLL_STATE.DISABLE);
             this.addEventListeners();
@@ -77,9 +94,12 @@ export const Keukenhof = ((): KeukenhofType => {
                 this.$modal?.classList.add(CLASS_NAMES.IS_OPENING);
                 const handler = () => {
                     this.$modal?.classList.remove(CLASS_NAMES.IS_OPENING);
+                    this.onOpen();
                     this.$modal?.removeEventListener('animationend', handler);
                 };
                 this.$modal?.addEventListener('animationend', handler);
+            } else {
+                this.onOpen();
             }
         }
 
@@ -87,6 +107,8 @@ export const Keukenhof = ((): KeukenhofType => {
          * Close modal window
          */
         close() {
+            const isContinue = this.beforeClose();
+            if (!isContinue) return;
             this.changeScrollBehavior(SCROLL_STATE.ENABLE);
             this.removeEventListeners();
             this.preparationClosingModal();
@@ -101,11 +123,13 @@ export const Keukenhof = ((): KeukenhofType => {
                 const handler = () => {
                     this.$modal?.classList.remove(CLASS_NAMES.IS_CLOSING);
                     this.$modal?.classList.remove(this.openClass);
+                    this.onClose();
                     this.$modal?.removeEventListener('animationend', handler);
                 };
                 this.$modal?.addEventListener('animationend', handler);
             } else {
                 this.$modal?.classList.remove(this.openClass);
+                this.onClose();
             }
         }
 
@@ -131,11 +155,21 @@ export const Keukenhof = ((): KeukenhofType => {
         }
 
         /**
+         * Keyboard press handler
+         *
+         * @param {KeyboardEvent} event - Event data
+         */
+        onKeydown(event: KeyboardEvent) {
+            if (event.keyCode === KEY_CODE.ESC) this.close();
+        }
+
+        /**
          * Add event listeners for an open modal
          */
         addEventListeners() {
             this.$modal?.addEventListener('touchstart', this.onClick);
             this.$modal?.addEventListener('click', this.onClick);
+            document.addEventListener('keydown', this.onKeydown);
         }
 
         /**
@@ -144,6 +178,7 @@ export const Keukenhof = ((): KeukenhofType => {
         removeEventListeners() {
             this.$modal?.removeEventListener('touchstart', this.onClick);
             this.$modal?.removeEventListener('click', this.onClick);
+            document.removeEventListener('keydown', this.onKeydown);
         }
 
         /**
