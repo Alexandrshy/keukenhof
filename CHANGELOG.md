@@ -1,3 +1,10 @@
+## [1.5.3](https://github.com/Alexandrshy/keukenhof/compare/v1.5.2...v1.5.3) (2020-07-05)
+
+
+### Bug Fixes
+
+* fixed the template ([4805211](https://github.com/Alexandrshy/keukenhof/commit/480521113a0efcfa46fe4a9fe5c5e916e3f26032))
+
 ## [1.5.2](https://github.com/Alexandrshy/keukenhof/compare/v1.5.1...v1.5.2) (2020-07-02)
 
 
