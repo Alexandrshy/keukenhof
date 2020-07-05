@@ -10,18 +10,18 @@ export type ConfigType = {
         container?: string;
         defaultValue?: string;
     };
-    onOpen?: () => void;
-    onClose?: () => void;
-    beforeOpen?: () => boolean;
-    beforeClose?: () => boolean;
+    onOpen?: (event?: Event) => void;
+    onClose?: (event?: Event) => void;
+    beforeOpen?: (event?: Event) => boolean;
+    beforeClose?: (event?: Event) => boolean;
 };
 
 export type ModalType = {
     registerNodes: (nodeList: HTMLElement[]) => void;
-    open: () => void;
-    preparationOpeningModal: () => void;
-    close: () => void;
-    preparationClosingModal: () => void;
+    open: (event?: Event) => void;
+    preparationOpeningModal: (event?: Event) => void;
+    close: (event?: Event) => void;
+    preparationClosingModal: (event?: Event) => void;
     closeBySelector: (selector: string) => void;
     onClick: (event: Event) => void;
     onKeydown: (event: KeyboardEvent) => void;

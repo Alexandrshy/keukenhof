@@ -7,10 +7,10 @@ export const Keukenhof = ((): KeukenhofType => {
      */
     class Modal {
         $modal: HTMLElement | null;
-        onOpen: () => void;
-        onClose: () => void;
-        beforeOpen: () => boolean;
-        beforeClose: () => boolean;
+        onOpen: (event?: Event) => void;
+        onClose: (event?: Event) => void;
+        beforeOpen: (event?: Event) => boolean;
+        beforeClose: (event?: Event) => boolean;
         openAttribute: string;
         closeAttribute: string;
         openClass: string;
@@ -71,65 +71,75 @@ export const Keukenhof = ((): KeukenhofType => {
         registerNodes(nodeList: HTMLElement[]) {
             nodeList
                 .filter(Boolean)
-                .forEach((element) => element.addEventListener('click', () => this.open()));
+                .forEach((element) =>
+                    element.addEventListener('click', (event) => this.open(event)),
+                );
         }
 
         /**
          * Open moda window
+         *
+         * @param {Event} event - Event data
          */
-        open() {
-            const isContinue = this.beforeOpen();
+        open(event?: Event) {
+            const isContinue = this.beforeOpen(event);
             if (!isContinue) return;
             this.$modal?.classList.add(this.openClass);
             this.changeScrollBehavior(SCROLL_STATE.DISABLE);
             this.addEventListeners();
-            this.preparationOpeningModal();
+            this.preparationOpeningModal(event);
         }
 
         /**
          * Preparing a modal window for opening
+         *
+         * @param {Event} event - Event data
          */
-        preparationOpeningModal() {
+        preparationOpeningModal(event?: Event) {
             if (this.hasAnimation) {
                 this.$modal?.classList.add(CLASS_NAMES.IS_OPENING);
                 const handler = () => {
                     this.$modal?.classList.remove(CLASS_NAMES.IS_OPENING);
-                    this.onOpen();
+                    this.onOpen(event);
                     this.$modal?.removeEventListener('animationend', handler);
                 };
                 this.$modal?.addEventListener('animationend', handler);
             } else {
-                this.onOpen();
+                this.onOpen(event);
             }
         }
 
         /**
          * Close modal window
+         *
+         * @param {Event} event - Event data
          */
-        close() {
-            const isContinue = this.beforeClose();
+        close(event?: Event) {
+            const isContinue = this.beforeClose(event);
             if (!isContinue) return;
             this.changeScrollBehavior(SCROLL_STATE.ENABLE);
             this.removeEventListeners();
-            this.preparationClosingModal();
+            this.preparationClosingModal(event);
         }
 
         /**
          * Preparing a modal window for closing
+         *
+         * @param {Event} event - Event data
          */
-        preparationClosingModal() {
+        preparationClosingModal(event?: Event) {
             if (this.hasAnimation) {
                 this.$modal?.classList.add(CLASS_NAMES.IS_CLOSING);
                 const handler = () => {
                     this.$modal?.classList.remove(CLASS_NAMES.IS_CLOSING);
                     this.$modal?.classList.remove(this.openClass);
-                    this.onClose();
+                    this.onClose(event);
                     this.$modal?.removeEventListener('animationend', handler);
                 };
                 this.$modal?.addEventListener('animationend', handler);
             } else {
                 this.$modal?.classList.remove(this.openClass);
-                this.onClose();
+                this.onClose(event);
             }
         }
 
