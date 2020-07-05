@@ -1,5 +1,5 @@
 import {ConfigType, ModalType, KeukenhofType} from './types';
-import {ATTRIBUTES, SCROLL_STATE, CLASS_NAMES, KEY_CODE} from './consts';
+import {ATTRIBUTES, SCROLL_STATE, CLASS_NAMES, KEY} from './consts';
 
 export const Keukenhof = ((): KeukenhofType => {
     /**
@@ -60,7 +60,7 @@ export const Keukenhof = ((): KeukenhofType => {
             this.registerNodes(triggers);
 
             this.onClick = this.onClick.bind(this);
-            this.onKeydown = this.onKeydown.bind(this);
+            this.onKeyup = this.onKeyup.bind(this);
         }
 
         /**
@@ -169,8 +169,8 @@ export const Keukenhof = ((): KeukenhofType => {
          *
          * @param {KeyboardEvent} event - Event data
          */
-        onKeydown(event: KeyboardEvent) {
-            if (event.keyCode === KEY_CODE.ESC) this.close();
+        onKeyup(event: KeyboardEvent) {
+            if (event.key === KEY.ESCAPE || event.key === KEY.ESC) this.close();
         }
 
         /**
@@ -179,7 +179,7 @@ export const Keukenhof = ((): KeukenhofType => {
         addEventListeners() {
             this.$modal?.addEventListener('touchstart', this.onClick);
             this.$modal?.addEventListener('click', this.onClick);
-            document.addEventListener('keydown', this.onKeydown);
+            document.addEventListener('keyup', this.onKeyup);
         }
 
         /**
@@ -188,7 +188,7 @@ export const Keukenhof = ((): KeukenhofType => {
         removeEventListeners() {
             this.$modal?.removeEventListener('touchstart', this.onClick);
             this.$modal?.removeEventListener('click', this.onClick);
-            document.removeEventListener('keydown', this.onKeydown);
+            document.removeEventListener('keyup', this.onKeyup);
         }
 
         /**

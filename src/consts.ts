@@ -14,6 +14,7 @@ export const CLASS_NAMES = {
     IS_CLOSING: 'isClosing',
 } as const;
 
-export const KEY_CODE = {
-    ESC: 27,
+export const KEY = {
+    ESC: 'Esc',
+    ESCAPE: 'Escape',
 } as const;
