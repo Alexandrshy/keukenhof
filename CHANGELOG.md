@@ -1,3 +1,11 @@
+# [1.6.0](https://github.com/Alexandrshy/keukenhof/compare/v1.5.3...v1.6.0) (2020-07-05)
+
+
+### Features
+
+* added the optional argument to callbacks ([4ed6254](https://github.com/Alexandrshy/keukenhof/commit/4ed62546dd826e2b460b5456078288abee115140))
+* replaced deprecated keyCode with key ([dd9c5af](https://github.com/Alexandrshy/keukenhof/commit/dd9c5af65a47baf176dabad8a2ec4b390d7a1c28))
+
 ## [1.5.3](https://github.com/Alexandrshy/keukenhof/compare/v1.5.2...v1.5.3) (2020-07-05)
 
 
