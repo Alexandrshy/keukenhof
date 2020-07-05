@@ -1,3 +1,10 @@
+## [1.6.1](https://github.com/Alexandrshy/keukenhof/compare/v1.6.0...v1.6.1) (2020-07-05)
+
+
+### Bug Fixes
+
+* passed the event to the close method ([0ebe2eb](https://github.com/Alexandrshy/keukenhof/commit/0ebe2eb2b335f888abb23d7583aad8bcf61bfd4d))
+
 # [1.6.0](https://github.com/Alexandrshy/keukenhof/compare/v1.5.3...v1.6.0) (2020-07-05)
 
 
