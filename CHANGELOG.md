@@ -1,3 +1,10 @@
+## [1.6.2](https://github.com/Alexandrshy/keukenhof/compare/v1.6.1...v1.6.2) (2020-07-05)
+
+
+### Bug Fixes
+
+* fixed README ([48baf90](https://github.com/Alexandrshy/keukenhof/commit/48baf90b2e1c4bc36d1b7c3ab669ac71238d5571))
+
 ## [1.6.1](https://github.com/Alexandrshy/keukenhof/compare/v1.6.0...v1.6.1) (2020-07-05)
 
 
