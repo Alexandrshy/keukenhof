@@ -161,7 +161,7 @@ export const Keukenhof = ((): KeukenhofType => {
          * @param {object} event - Event data
          */
         onClick(event: Event) {
-            if ((event.target as Element).closest(`[${this.closeAttribute}]`)) this.close();
+            if ((event.target as Element).closest(`[${this.closeAttribute}]`)) this.close(event);
         }
 
         /**
@@ -170,7 +170,7 @@ export const Keukenhof = ((): KeukenhofType => {
          * @param {KeyboardEvent} event - Event data
          */
         onKeyup(event: KeyboardEvent) {
-            if (event.key === KEY.ESCAPE || event.key === KEY.ESC) this.close();
+            if (event.key === KEY.ESCAPE || event.key === KEY.ESC) this.close(event);
         }
 
         /**
