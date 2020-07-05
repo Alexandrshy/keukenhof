@@ -55,10 +55,10 @@ Keukenhof.init();
 
 ## Roadmap
 
-* Add callbacks `onOpen`, `onClose`, `beforeOpen`, `beforeClose`
 * Add optional focus control inside the modal window
 * Add accessibility support
 * Write documentation
+* ~~Add callbacks `onOpen`, `onClose`, `beforeOpen`, `beforeClose`~~
 * ~~Add support for CSS animations~~
 * ~~Add optional scroll lock~~
 * ~~Add a dev server for local development~~
