@@ -14,6 +14,7 @@ export type ConfigType = {
     onClose?: (event?: Event) => void;
     beforeOpen?: (event?: Event) => boolean;
     beforeClose?: (event?: Event) => boolean;
+    setAriaHidden?: (value: boolean) => void;
 };
 
 export type ModalType = {
