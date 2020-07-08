@@ -85,6 +85,7 @@ export const Keukenhof = ((): KeukenhofType => {
             const isContinue = this.beforeOpen(event);
             if (!isContinue) return;
             this.$modal?.classList.add(this.openClass);
+            this.setAraiHidden(false);
             this.changeScrollBehavior(SCROLL_STATE.DISABLE);
             this.addEventListeners();
             this.preparationOpeningModal(event);
@@ -117,6 +118,7 @@ export const Keukenhof = ((): KeukenhofType => {
         close(event?: Event) {
             const isContinue = this.beforeClose(event);
             if (!isContinue) return;
+            this.setAraiHidden(true);
             this.changeScrollBehavior(SCROLL_STATE.ENABLE);
             this.removeEventListeners();
             this.preparationClosingModal(event);
@@ -203,6 +205,15 @@ export const Keukenhof = ((): KeukenhofType => {
             if (value === SCROLL_STATE.ENABLE)
                 element.style.overflow = this.scrollBehavior.defaultValue;
             else if (value === SCROLL_STATE.DISABLE) element.style.overflow = 'hidden';
+        }
+
+        /**
+         * Set value for arai-hidden
+         *
+         * @param {boolean} value - aria-hidden value
+         */
+        setAraiHidden(value: boolean) {
+            this.$modal?.setAttribute('aria-hidden', String(value));
         }
     }
 
