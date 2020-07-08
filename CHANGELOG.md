@@ -1,3 +1,10 @@
+## [1.7.1](https://github.com/Alexandrshy/keukenhof/compare/v1.7.0...v1.7.1) (2020-07-08)
+
+
+### Bug Fixes
+
+* removed workaround ([1032e40](https://github.com/Alexandrshy/keukenhof/commit/1032e4018d8365426f7e33db3b70db6814fb12fe))
+
 # [1.7.0](https://github.com/Alexandrshy/keukenhof/compare/v1.6.2...v1.7.0) (2020-07-08)
 
 
