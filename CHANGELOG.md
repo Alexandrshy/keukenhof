@@ -1,3 +1,10 @@
+# [1.7.0](https://github.com/Alexandrshy/keukenhof/compare/v1.6.2...v1.7.0) (2020-07-08)
+
+
+### Features
+
+* added support for aria-hidden ([ff9cdfc](https://github.com/Alexandrshy/keukenhof/commit/ff9cdfc707664e5c78a80659a3d953479104b5e6))
+
 ## [1.6.2](https://github.com/Alexandrshy/keukenhof/compare/v1.6.1...v1.6.2) (2020-07-05)
 
 
