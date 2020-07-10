@@ -1,3 +1,10 @@
+# [1.9.0](https://github.com/Alexandrshy/keukenhof/compare/v1.8.0...v1.9.0) (2020-07-10)
+
+
+### Features
+
+* added autofocus after opening a modal window ([9c147a5](https://github.com/Alexandrshy/keukenhof/commit/9c147a521f0449b3029c9ed5d3dede38df6f1a68))
+
 # [1.8.0](https://github.com/Alexandrshy/keukenhof/compare/v1.7.1...v1.8.0) (2020-07-08)
 
 
