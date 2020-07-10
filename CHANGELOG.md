@@ -1,3 +1,10 @@
+# [1.10.0](https://github.com/Alexandrshy/keukenhof/compare/v1.9.0...v1.10.0) (2020-07-10)
+
+
+### Features
+
+* added focus control inside the active modal window ([cc7dcf1](https://github.com/Alexandrshy/keukenhof/commit/cc7dcf194798974181e346fcd05bd81338e6dc1b))
+
 # [1.9.0](https://github.com/Alexandrshy/keukenhof/compare/v1.8.0...v1.9.0) (2020-07-10)
 
 
