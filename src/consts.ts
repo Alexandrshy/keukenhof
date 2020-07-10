@@ -17,6 +17,7 @@ export const CLASS_NAMES = {
 export const KEY = {
     ESC: 'Esc',
     ESCAPE: 'Escape',
+    TAB: 'Tab',
 } as const;
 
 export const FOCUSING_ELEMENTS = [

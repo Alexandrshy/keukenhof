@@ -16,6 +16,7 @@ export const Keukenhof = ((): KeukenhofType => {
         openClass: string;
         hasAnimation: boolean;
         isAssignFocus: boolean;
+        isFocusInside: boolean;
         scrollBehavior: {
             isDisabled: boolean;
             container: string;
@@ -35,6 +36,7 @@ export const Keukenhof = ((): KeukenhofType => {
             openClass = CLASS_NAMES.IS_OPEN,
             hasAnimation = false,
             isAssignFocus = true,
+            isFocusInside = true,
             scrollBehavior = {},
             onOpen = () => {},
             onClose = () => {},
@@ -53,6 +55,7 @@ export const Keukenhof = ((): KeukenhofType => {
             this.openClass = openClass;
             this.hasAnimation = hasAnimation;
             this.isAssignFocus = isAssignFocus;
+            this.isFocusInside = isFocusInside;
             this.scrollBehavior = {
                 isDisabled: true,
                 container: 'body',
@@ -64,6 +67,7 @@ export const Keukenhof = ((): KeukenhofType => {
 
             this.onClick = this.onClick.bind(this);
             this.onKeyup = this.onKeyup.bind(this);
+            this.onKeydown = this.onKeydown.bind(this);
         }
 
         /**
@@ -172,12 +176,21 @@ export const Keukenhof = ((): KeukenhofType => {
         }
 
         /**
-         * Keyboard press handler
+         * Event keyup handler
          *
          * @param {KeyboardEvent} event - Event data
          */
         onKeyup(event: KeyboardEvent) {
             if (event.key === KEY.ESCAPE || event.key === KEY.ESC) this.close(event);
+        }
+
+        /**
+         * Event keydown handler
+         *
+         * @param {KeyboardEvent} event - Event data
+         */
+        onKeydown(event: KeyboardEvent) {
+            if (event.key === KEY.TAB) this.controlFocus(event);
         }
 
         /**
@@ -187,6 +200,7 @@ export const Keukenhof = ((): KeukenhofType => {
             this.$modal?.addEventListener('touchstart', this.onClick);
             this.$modal?.addEventListener('click', this.onClick);
             document.addEventListener('keyup', this.onKeyup);
+            if (this.isFocusInside) document.addEventListener('keydown', this.onKeydown);
         }
 
         /**
@@ -196,6 +210,7 @@ export const Keukenhof = ((): KeukenhofType => {
             this.$modal?.removeEventListener('touchstart', this.onClick);
             this.$modal?.removeEventListener('click', this.onClick);
             document.removeEventListener('keyup', this.onKeyup);
+            if (this.isFocusInside) document.removeEventListener('keydown', this.onKeydown);
         }
 
         /**
@@ -242,6 +257,36 @@ export const Keukenhof = ((): KeukenhofType => {
                 (item) => !item.hasAttribute(this.closeAttribute),
             );
             (filteredNodesList.length ? filteredNodesList[0] : nodesList[0]).focus();
+        }
+
+        /**
+         * Leaves focus control inside a modal
+         *
+         * @param {KeyboardEvent} event - Event data
+         */
+        controlFocus(event: KeyboardEvent) {
+            const nodesList = this.getFocusNodesList();
+            if (!nodesList.length) return;
+            const filteredNodesList = nodesList.filter(({offsetParent}) => offsetParent !== null);
+            if (!this.$modal?.contains(document.activeElement)) {
+                filteredNodesList[0].focus();
+            } else {
+                const index = filteredNodesList.indexOf(document.activeElement as HTMLElement);
+
+                if (event.shiftKey && index === 0) {
+                    filteredNodesList[filteredNodesList.length - 1].focus();
+                    event.preventDefault();
+                }
+
+                if (
+                    !event.shiftKey &&
+                    filteredNodesList.length &&
+                    index === filteredNodesList.length - 1
+                ) {
+                    filteredNodesList[0].focus();
+                    event.preventDefault();
+                }
+            }
         }
     }
 

@@ -55,9 +55,9 @@ Keukenhof.init();
 
 ## Roadmap
 
-* Add optional focus control inside the modal window
-* Add accessibility support
 * Write documentation
+* ~~Add optional focus control inside the modal window~~
+* ~~Add accessibility support~~
 * ~~Add callbacks `onOpen`, `onClose`, `beforeOpen`, `beforeClose`~~
 * ~~Add support for CSS animations~~
 * ~~Add optional scroll lock~~

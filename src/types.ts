@@ -6,6 +6,7 @@ export type ConfigType = {
     openClass?: string;
     hasAnimation?: boolean;
     isAssignFocus?: boolean;
+    isFocusInside?: boolean;
     scrollBehavior?: {
         isDisabled?: boolean;
         container?: string;
@@ -27,9 +28,11 @@ export type ModalType = {
     closeBySelector: (selector: string) => void;
     onClick: (event: Event) => void;
     onKeyup: (event: KeyboardEvent) => void;
+    onKeydown: (event: KeyboardEvent) => void;
     addEventListeners: () => void;
     removeEventListeners: () => void;
     changeScrollBehavior: (value: 'disable' | 'enable') => void;
+    controlFocus: (event: KeyboardEvent) => void;
 };
 
 export type KeukenhofType = {
