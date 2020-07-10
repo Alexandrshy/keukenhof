@@ -1,5 +1,5 @@
 import {ConfigType, ModalType, KeukenhofType} from './types';
-import {ATTRIBUTES, SCROLL_STATE, CLASS_NAMES, KEY} from './consts';
+import {ATTRIBUTES, SCROLL_STATE, CLASS_NAMES, KEY, FOCUSING_ELEMENTS} from './consts';
 
 export const Keukenhof = ((): KeukenhofType => {
     /**
@@ -15,6 +15,7 @@ export const Keukenhof = ((): KeukenhofType => {
         closeAttribute: string;
         openClass: string;
         hasAnimation: boolean;
+        isAssignFocus: boolean;
         scrollBehavior: {
             isDisabled: boolean;
             container: string;
@@ -33,6 +34,7 @@ export const Keukenhof = ((): KeukenhofType => {
             closeAttribute = ATTRIBUTES.CLOSE,
             openClass = CLASS_NAMES.IS_OPEN,
             hasAnimation = false,
+            isAssignFocus = true,
             scrollBehavior = {},
             onOpen = () => {},
             onClose = () => {},
@@ -50,6 +52,7 @@ export const Keukenhof = ((): KeukenhofType => {
             this.closeAttribute = closeAttribute;
             this.openClass = openClass;
             this.hasAnimation = hasAnimation;
+            this.isAssignFocus = isAssignFocus;
             this.scrollBehavior = {
                 isDisabled: true,
                 container: 'body',
@@ -100,12 +103,14 @@ export const Keukenhof = ((): KeukenhofType => {
             if (this.hasAnimation) {
                 this.$modal?.classList.add(CLASS_NAMES.IS_OPENING);
                 const handler = () => {
+                    if (this.isAssignFocus) this.setFocus();
                     this.$modal?.classList.remove(CLASS_NAMES.IS_OPENING);
                     this.onOpen(event);
                     this.$modal?.removeEventListener('animationend', handler);
                 };
                 this.$modal?.addEventListener('animationend', handler);
             } else {
+                if (this.isAssignFocus) this.setFocus();
                 this.onOpen(event);
             }
         }
@@ -214,6 +219,29 @@ export const Keukenhof = ((): KeukenhofType => {
          */
         setAriaHidden(value: boolean) {
             this.$modal?.setAttribute('aria-hidden', String(value));
+        }
+
+        /**
+         * Get a list of node elements that may be in focus
+         *
+         * @returns {Array<HTMLElement>} list of nodes
+         */
+        getFocusNodesList(): HTMLElement[] {
+            if (!this.$modal) return [];
+            const nodes = this.$modal.querySelectorAll<HTMLElement>(FOCUSING_ELEMENTS.join(', '));
+            return Array.from(nodes);
+        }
+
+        /**
+         * Set focus on an element inside a modal
+         */
+        setFocus() {
+            const nodesList = this.getFocusNodesList();
+            if (!nodesList.length) return;
+            const filteredNodesList = nodesList.filter(
+                (item) => !item.hasAttribute(this.closeAttribute),
+            );
+            (filteredNodesList.length ? filteredNodesList[0] : nodesList[0]).focus();
         }
     }
 

@@ -5,6 +5,8 @@
   --white-rgba: rgba(255, 255, 255, 0.6);
   --gallery-rgba: rgba(238, 238, 238, 0.4);
   --animation: cubic-bezier(0.66, 0.28, 0.09, 0.53);
+
+  --modal-focus: var(--gallery-rgba);
 }
 
 body {
@@ -81,6 +83,12 @@ img {
 
 .modal__link {
   color: var(--pink-swan);
+}
+
+.modal__button:focus,
+.modal__link:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px var(--modal-focus);
 }
 
 .modal__overlay {

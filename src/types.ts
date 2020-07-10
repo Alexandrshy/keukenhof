@@ -5,6 +5,7 @@ export type ConfigType = {
     closeAttribute?: string;
     openClass?: string;
     hasAnimation?: boolean;
+    isAssignFocus?: boolean;
     scrollBehavior?: {
         isDisabled?: boolean;
         container?: string;

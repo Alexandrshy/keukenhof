@@ -18,3 +18,13 @@ export const KEY = {
     ESC: 'Esc',
     ESCAPE: 'Escape',
 } as const;
+
+export const FOCUSING_ELEMENTS = [
+    'a[href]',
+    'area[href]',
+    'button:not([disabled]):not([aria-hidden])',
+    'input:not([disabled]):not([aria-hidden])',
+    'select:not([disabled]):not([aria-hidden])',
+    'textarea:not([disabled]):not([aria-hidden])',
+    '[tabindex]:not([tabindex^="-"])',
+];
