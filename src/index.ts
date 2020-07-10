@@ -272,17 +272,14 @@ export const Keukenhof = ((): KeukenhofType => {
                 filteredNodesList[0].focus();
             } else {
                 const index = filteredNodesList.indexOf(document.activeElement as HTMLElement);
+                const length = filteredNodesList.length;
 
                 if (event.shiftKey && index === 0) {
-                    filteredNodesList[filteredNodesList.length - 1].focus();
+                    filteredNodesList[length - 1].focus();
                     event.preventDefault();
                 }
 
-                if (
-                    !event.shiftKey &&
-                    filteredNodesList.length &&
-                    index === filteredNodesList.length - 1
-                ) {
+                if (!event.shiftKey && length && index === length - 1) {
                     filteredNodesList[0].focus();
                     event.preventDefault();
                 }
