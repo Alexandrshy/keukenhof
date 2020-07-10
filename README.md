@@ -56,6 +56,9 @@ Keukenhof.init();
 ## Roadmap
 
 * Write documentation
+* Write markup (template) to use
+* Implement a page with documentation and examples of use
+* Update README (add a detailed description of the use and contributing)
 * ~~Add optional focus control inside the modal window~~
 * ~~Add accessibility support~~
 * ~~Add callbacks `onOpen`, `onClose`, `beforeOpen`, `beforeClose`~~
