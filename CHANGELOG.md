@@ -1,3 +1,10 @@
+## [1.10.1](https://github.com/Alexandrshy/keukenhof/compare/v1.10.0...v1.10.1) (2020-07-10)
+
+
+### Bug Fixes
+
+* updated types ([8c6418c](https://github.com/Alexandrshy/keukenhof/commit/8c6418c4560047a9a42152ccdc461c5043586b1e))
+
 # [1.10.0](https://github.com/Alexandrshy/keukenhof/compare/v1.9.0...v1.10.0) (2020-07-10)
 
 
