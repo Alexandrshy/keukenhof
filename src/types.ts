@@ -16,7 +16,6 @@ export type ConfigType = {
     onClose?: (event?: Event) => void;
     beforeOpen?: (event?: Event) => boolean;
     beforeClose?: (event?: Event) => boolean;
-    setAriaHidden?: (value: boolean) => void;
 };
 
 export type ModalType = {
@@ -32,7 +31,10 @@ export type ModalType = {
     addEventListeners: () => void;
     removeEventListeners: () => void;
     changeScrollBehavior: (value: 'disable' | 'enable') => void;
+    getFocusNodesList: () => HTMLElement[];
+    setFocus: () => void;
     controlFocus: (event: KeyboardEvent) => void;
+    setAriaHidden: (value: boolean) => void;
 };
 
 export type KeukenhofType = {
