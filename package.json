@@ -36,7 +36,7 @@
     ]
   },
   "scripts": {
-    "prettier": "prettier '**/*.{js,ts}' --ignore-path ./.prettierignore",
+    "prettier": "prettier '**/*.{js,ts,html}' --ignore-path ./.prettierignore",
     "types": "tsc --noEmit",
     "lint": "eslint '*/**/*.{js,ts}'",
     "build": "npm run build:clean && npm run build:lib",
