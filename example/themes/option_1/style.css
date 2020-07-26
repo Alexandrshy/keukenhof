@@ -248,7 +248,7 @@ p {
 }
 
 .modal.isClosing {
-    animation: fadeOut 0.35s var(--animation);
+    animation: fadeIn 0.35s var(--animation) 1 reverse;
 }
 
 .modal.isOpening .modal__container {
@@ -266,16 +266,6 @@ p {
 
     100% {
         opacity: 1;
-    }
-}
-
-@keyframes fadeOut {
-    0% {
-        opacity: 1;
-    }
-
-    100% {
-        opacity: 0;
     }
 }
 

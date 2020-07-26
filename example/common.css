@@ -1,0 +1,43 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%;
+}
+
+body {
+    min-width: 100vw;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-poppins);
+    text-align: center;
+}
+
+svg,
+img {
+    max-width: 100%;
+}
+
+.modal.isOpen {
+    display: flex;
+}
+
+p,
+a {
+    font-size: 1rem;
+}
+
+p {
+    margin: 0 0 0.5rem;
+    line-height: 1.65;
+}
+
+@media (max-width: 420px) {
+    p {
+        margin: 0 0 0.625rem;
+        line-height: 1.5;
+    }
+}
