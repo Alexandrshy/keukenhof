@@ -1,7 +1,7 @@
 {
     "name": "keukenhof",
     "version": "1.0.0",
-    "description": "Lightweight modal library 🌷",
+    "description": "Lightweight and easy to use the library for modals",
     "main": "./dist/index.js",
     "module": "./dist/index.es.js",
     "types": "./dist/index.d.ts",

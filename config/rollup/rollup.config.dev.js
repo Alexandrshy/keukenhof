@@ -29,6 +29,7 @@ export default {
             clean: true,
         }),
         babel({
+            babelHelpers: 'bundled',
             exclude: 'node_modules/**',
             extensions,
         }),

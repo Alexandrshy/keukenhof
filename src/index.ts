@@ -14,6 +14,8 @@ export const Keukenhof = ((): KeukenhofType => {
         openAttribute: string;
         closeAttribute: string;
         openClass: string;
+        openingClass: string;
+        closingClass: string;
         hasAnimation: boolean;
         isAssignFocus: boolean;
         isFocusInside: boolean;
@@ -34,6 +36,8 @@ export const Keukenhof = ((): KeukenhofType => {
             openAttribute = ATTRIBUTES.OPEN,
             closeAttribute = ATTRIBUTES.CLOSE,
             openClass = CLASS_NAMES.IS_OPEN,
+            openingClass = CLASS_NAMES.IS_OPENING,
+            closingClass = CLASS_NAMES.IS_CLOSING,
             hasAnimation = false,
             isAssignFocus = true,
             isFocusInside = true,
@@ -53,6 +57,8 @@ export const Keukenhof = ((): KeukenhofType => {
             this.openAttribute = openAttribute;
             this.closeAttribute = closeAttribute;
             this.openClass = openClass;
+            this.openingClass = openingClass;
+            this.closingClass = closingClass;
             this.hasAnimation = hasAnimation;
             this.isAssignFocus = isAssignFocus;
             this.isFocusInside = isFocusInside;
@@ -105,10 +111,10 @@ export const Keukenhof = ((): KeukenhofType => {
          */
         preparationOpeningModal(event?: Event) {
             if (this.hasAnimation) {
-                this.$modal?.classList.add(CLASS_NAMES.IS_OPENING);
+                this.$modal?.classList.add(this.openingClass);
                 const handler = () => {
                     if (this.isAssignFocus) this.setFocus();
-                    this.$modal?.classList.remove(CLASS_NAMES.IS_OPENING);
+                    this.$modal?.classList.remove(this.openingClass);
                     this.onOpen(event);
                     this.$modal?.removeEventListener('animationend', handler);
                 };
@@ -140,9 +146,9 @@ export const Keukenhof = ((): KeukenhofType => {
          */
         preparationClosingModal(event?: Event) {
             if (this.hasAnimation) {
-                this.$modal?.classList.add(CLASS_NAMES.IS_CLOSING);
+                this.$modal?.classList.add(this.closingClass);
                 const handler = () => {
-                    this.$modal?.classList.remove(CLASS_NAMES.IS_CLOSING);
+                    this.$modal?.classList.remove(this.closingClass);
                     this.$modal?.classList.remove(this.openClass);
                     this.onClose(event);
                     this.$modal?.removeEventListener('animationend', handler);

@@ -4,6 +4,8 @@ export type ConfigType = {
     openAttribute?: string;
     closeAttribute?: string;
     openClass?: string;
+    openingClass?: string;
+    closingClass?: string;
     hasAnimation?: boolean;
     isAssignFocus?: boolean;
     isFocusInside?: boolean;
@@ -31,10 +33,10 @@ export type ModalType = {
     addEventListeners: () => void;
     removeEventListeners: () => void;
     changeScrollBehavior: (value: 'disable' | 'enable') => void;
+    setAriaHidden: (value: boolean) => void;
     getFocusNodesList: () => HTMLElement[];
     setFocus: () => void;
     controlFocus: (event: KeyboardEvent) => void;
-    setAriaHidden: (value: boolean) => void;
 };
 
 export type KeukenhofType = {
