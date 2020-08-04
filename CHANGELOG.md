@@ -1,3 +1,10 @@
+## [1.10.3](https://github.com/Alexandrshy/keukenhof/compare/v1.10.2...v1.10.3) (2020-08-04)
+
+
+### Bug Fixes
+
+* added class names for the modal window for opening and closing process ([40509b3](https://github.com/Alexandrshy/keukenhof/commit/40509b3274c183de9f8b452cd3814cd8ae2d3038))
+
 ## [1.10.2](https://github.com/Alexandrshy/keukenhof/compare/v1.10.1...v1.10.2) (2020-07-10)
 
 
