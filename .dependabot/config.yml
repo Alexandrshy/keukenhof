@@ -4,7 +4,6 @@ update_configs:
   - package_manager: "javascript"
     directory: "/"
     update_schedule: "weekly"
-    target_branch: "master"
     commit_message:
       prefix: "fix"
     target_branch: "dependa"
