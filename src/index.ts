@@ -203,7 +203,6 @@ export const Keukenhof = ((): KeukenhofType => {
          * Add event listeners for an open modal
          */
         addEventListeners() {
-            this.$modal?.addEventListener('touchstart', this.onClick);
             this.$modal?.addEventListener('click', this.onClick);
             document.addEventListener('keyup', this.onKeyup);
             if (this.isFocusInside) document.addEventListener('keydown', this.onKeydown);
@@ -213,7 +212,6 @@ export const Keukenhof = ((): KeukenhofType => {
          * Remove event listener for an open modal
          */
         removeEventListeners() {
-            this.$modal?.removeEventListener('touchstart', this.onClick);
             this.$modal?.removeEventListener('click', this.onClick);
             document.removeEventListener('keyup', this.onKeyup);
             if (this.isFocusInside) document.removeEventListener('keydown', this.onKeydown);
