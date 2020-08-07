@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta property="og:title" content="Keukenhof">
+    <meta property="og:url" content="">
+    <meta property="og:type" content="website">
+    <meta property="og:description" content="Keukenhof - lightweight library for modal windows">
+    <link rel="shortcut icon" href="/favicon.08708974.png">
+    <title>Keukenhof - lightweight library for modal windows</title>
+    <link rel="stylesheet" href="/styles.6145e9cd.css">
+<script src="/styles.6145e9cd.js"></script></head>
+
+<body>
+    <header class="header">
+        <div class="header__wrapper">
+            <img class="header__logo" src="/logo.f1d8a4c6.svg" alt="Keukenhof logo">
+            <h1 class="header__title">Keukenhof.js</h1>
+            <h2 class="header__subtitle">Lightweight and easy to use the library for modals</h2>
+            <a href="https://github.com/Alexandrshy/keukenhof" class="button" rel="nofollow noreferrer">
+                <svg xmlns="http://www.w3.org/2000/svg" class="button__icon button__icon--github" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round" role="presentation">
+                    <path stroke="none" d="M0 0h24v24H0z"></path>
+                    <path d="M9 19c-4.286 1.35-4.286-2.55-6-3m12 5v-3.5c0-1 .099-1.405-.5-2 2.791-.3 5.5-1.366 5.5-6.04a4.567 4.567 0 0 0 -1.333 -3.21 4.192 4.192 0 00-.08-3.227s-1.05-.3-3.476 1.267a12.334 12.334 0 0 0 -6.222 0C6.462 2.723 5.413 3.023 5.413 3.023a4.192 4.192 0 0 0 -.08 3.227A4.566 4.566 0 004 9.486c0 4.64 2.709 5.68 5.5 6.014-.591.589-.56 1.183-.5 2V21"></path>
+                </svg>
+                <span>View on GitHub</span>
+            </a>
+            <button class="button">
+                <svg xmlns="http://www.w3.org/2000/svg" class="button__icon button__icon--doc" viewBox="0 0 24 24" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round" role="presentation">
+                    <path stroke="none" d="M0 0h24v24H0z"></path>
+                    <path d="M7 4a2 2 0 0 0 -2 2v3a2 3 0 0 1 -2 3a2 3 0 0 1 2 3v3a2 2 0 0 0 2 2"></path>
+                    <path d="M17 4a2 2 0 0 1 2 2v3a2 3 0 0 0 2 3a2 3 0 0 0 -2 3v3a2 2 0 0 1 -2 2"></path>
+                </svg>
+                <span>Documentation</span>
+            </button>
+        </div>
+    </header>
+    <main>
+        <div class="installation">
+            <div class="wrapper">
+                <div class="installation__box">
+                    <h3 class="installation__title">Install package</h3>
+                    <ul class="installation__list">
+                        <li class="installation__item"><span class="installation__head">NPM</span><span class="installation__value">npm i keukenhof</span></li>
+                        <li class="installation__item"><span class="installation__head">CDN</span><span class="installation__value">https://unpkg.com/keukenhof</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="main">
+            <div class="wrapper">
+                <article class="article">
+                    <div class="article__solid">
+                        <h2 id="example" class="article__title">
+                            <div class="article__title-box permalink-trigger">
+                                <a href="#example" class="permalink" aria-label="
+                        Move to Example"></a>
+                                Example
+                            </div>
+                        </h2>
+                    </div>
+                    <div class="article__example-box">
+                        <div class="article__example">
+                            <button class="button" data-keukenhof-open="#modal">
+                                Open modal
+                            </button>
+                        </div>
+                        <div class="article__code">
+                            <p>Example of using <span class="special">Keukenhof.js</span> for an animated modal window
+                            </p>
+                            <pre class="prism-code language-js">
+                                <code>
+import {Keukenhof} from 'keukenhof';
+                            
+Keukenhof.init({
+    hasAnimation: true,
+});</code>
+                            </pre>
+                        </div>
+                    </div>
+                </article>
+                <article class="article">
+                    <div class="article__solid">
+                        <h2 id="installation" class="article__title">
+                            <div class="article__title-box permalink-trigger">
+                                <a href="#installation" class="permalink" aria-label="Move to Installation"></a>
+                                Installation
+                            </div>
+                        </h2>
+                        <ul class="article__steps">
+                            <li class="article__step">
+                                <h4 id="package-manager" class="article__docs">
+                                    <div class="article__title-box permalink-trigger">
+                                        <a href="#package-manager" class="permalink permalink--small" aria-label="Move to Package Manager"></a>
+                                        Package Manager
+                                    </div>
+                                </h4>
+                                <pre class="prism-code language-bash">
+                                    <code>
+# With npm
+npm i keukenhof
+
+# With Yarn
+yarn add Keukenhof</code>
+                                </pre>
+                            </li>
+                            <li class="article__step">
+                                <h4 id="cdn" class="article__docs">
+                                    <div class="article__title-box permalink-trigger">
+                                        <a href="#cdn" class="permalink permalink--small" aria-label="Move to cdn"></a>
+                                        CDN
+                                    </div>
+                                </h4>
+                                <pre class="prism-code language-html">
+                                    <code>
+&lt;script src="https://unpkg.com/keukenhof">&lt;/script></code>
+                                </pre>
+                            </li>
+                        </ul>
+                    </div>
+                </article>
+                <article class="article">
+                    <div class="article__solid">
+                        <h2 id="usage" class="article__title">
+                            <div class="article__title-box permalink-trigger">
+                                <a href="#usage" class="permalink" aria-label="Move to Usage"></a>
+                                Usage
+                            </div>
+                        </h2>
+                        <p>Part of the preparation of the library work is hidden, you just need to create a layout.
+                            There
+                            are no restrictions on
+                            the layout of your modal window, you just need to add <code class="special">data-keukenhof-open</code> to the value of
+                            which you need to specify the
+                            selector of the window that should open on click and <code class="special">data-keukenhof-close</code> for the element
+                            that should close the currently
+                            active modal</p>
+                        <p><code class="special">aria-*</code> attributes are important for the accessibility of your
+                            content and are added by you when creating the layout (only
+                            you can correctly describe the purpose of your modal), <span class="special">Keukenhof.js</span> is responsible for
+                            switching <code class="special">aria-hidden</code></p>
+                        <pre class="prism-code language-html">
+                            <code>
+&lt;!DOCTYPE html>
+&lt;title>Keukenhof.js modal example&lt;/title>
+
+&lt;style>
+    #modal {
+        display: none;
+    }
+
+    #modal.isOpen {
+        display: block;
+    }
+&lt;/style>
+
+&lt;button data-keukenhof-open="#modal">Open modal&lt;/button>
+
+&lt;!-- Main modal wrapper with required id -->
+&lt;div 
+    id="modal" 
+    role="dialog" 
+    aria-hidden="true" 
+    aria-labelledby="title" 
+    aria-describedby="desc">
+    &lt;!-- Element for handling a click outside the modal window -->
+    &lt;div 
+        class="overlay" 
+        tabindex="-1" 
+        data-keukenhof-close>&lt;/div>
+    
+    &lt;header>
+        &lt;!-- Button to close the modal window -->
+        &lt;button 
+            class="close" 
+            aria-label="Close modal" 
+            data-keukenhof-close>Close&lt;/button>
+    &lt;/header>
+
+    &lt;!-- Body used to improve a11y by describing the purpose of the modal -->
+    &lt;main>
+        &lt;h2 id="title">Keukenhof.js modal&lt;/h2>
+        &lt;p id="desc">Lightweight and easy to use the library for modals&lt;/p>
+    &lt;/main>
+&lt;/div>
+
+&lt;script src="https://unpkg.com/keukenhof">&lt;/script>
+
+&lt;script>
+    Keukenhof.init();
+&lt;/script></code>
+                        </pre>
+                    </div>
+                </article>
+                <article class="article">
+                    <div class="article__solid">
+                        <h2 id="bundle" class="article__title">
+                            <div class="article__title-box permalink-trigger">
+                                <a href="#bundle" class="permalink" aria-label="
+                                                Move to Module bundlers"></a>
+                                Module bundlers
+                            </div>
+                        </h2>
+                        <p>An alternative connection option is to use import Keukenhof</p>
+                        <pre class="prism-code language-js">
+                            <code>
+import {Keukenhof} from 'keukenhof';
+
+// Initializing modal windows based on markup
+Keukenhof.init({
+    // options
+});
+
+// Configure and open modal by selector
+Keukenhof.open('#modal', {
+    // options
+});
+
+// Close active modal window
+Keukenhof.close();</code>
+                        </pre>
+                    </div>
+                </article>
+                <article class="article">
+                    <div class="article__solid">
+                        <h2 id="options" class="article__title">
+                            <div class="article__title-box permalink-trigger">
+                                <a href="#options" class="permalink" aria-label="
+                                    Move to Options"></a>
+                                Options
+                            </div>
+                        </h2>
+                        <ul class="article__steps">
+                            <li class="article__step">
+                                <h4 id="openAttribute" class="article__docs">
+                                    <div class="article__title-box permalink-trigger">
+                                        <a href="#openAttribute" class="permalink permalink--small" aria-label="Move to openAttribute option"></a>
+                                        <span class="article__specification">openAttribute</span><span class="article__specification article__specification--addition">string</span>
+                                    </div>
+                                </h4>
+                                <p>The attribute containing the selector of the modal window that should be opened by
+                                    clicking on the element</p>
+                                <p>By default: <code class="special">data-keukenhof-open</code></p>
+                                <pre class="prism-code language-js">
+                                    <code>
+Keukenhof.init({
+    openAttribute: 'data-modal-open',
+});</code>
+                                </pre>
+                            </li>
+                            <li class="article__step">
+                                <h4 id="closeAttribute" class="article__docs">
+                                    <div class="article__title-box permalink-trigger">
+                                        <a href="#closeAttribute" class="permalink permalink--small" aria-label="Move to closeAttribute option"></a>
+                                        <span class="article__specification">closeAttribute</span><span class="article__specification article__specification--addition">string</span>
+                                    </div>
+                                </h4>
+                                <p>The attribute marking elements inside the modal window, clicking on which will close
+                                    this modal window</p>
+                                <p>By default: <code class="special">data-keukenhof-close</code></p>
+                                <pre class="prism-code language-js">
+                                    <code>
+Keukenhof.init({
+    closeAttribute: 'data-modal-close',
+});</code>
+                                    </pre>
+                            </li>
+                            <li class="article__step">
+                                <h4 id="openClass" class="article__docs">
+                                    <div class="article__title-box permalink-trigger">
+                                        <a href="#openClass" class="permalink permalink--small" aria-label="Move to openClass option"></a>
+                                        <span class="article__specification">openClass</span><span class="article__specification article__specification--addition">string</span>
+                                    </div>
+                                </h4>
+                                <p>The class name added for the open modal window</p>
+                                <p>By default: <code class="special">isOpen</code></p>
+                                <pre class="prism-code language-js">
+                                    <code>
+Keukenhof.init({
+    openClass: 'is-open',
+});</code>
+                                </pre>
+                            </li>
+                            <li class="article__step">
+                                <h4 id="openingClass" class="article__docs">
+                                    <div class="article__title-box permalink-trigger">
+                                        <a href="#openingClass" class="permalink permalink--small" aria-label="Move to openingClass option"></a>
+                                        <span class="article__specification">openingClass</span><span class="article__specification article__specification--addition">string</span>
+                                    </div>
+                                </h4>
+                                <p>The class name added for the modal window that is in the process of opening (required
+                                    for modals using CSS animations)</p>
+                                <p>By default: <code class="special">isOpening</code></p>
+                                <pre class="prism-code language-js">
+                                    <code>
+Keukenhof.init({
+    openingClass: 'is-opening',
+});</code>
+                                </pre>
+                            </li>
+                            <li class="article__step">
+                                <h4 id="closingClass" class="article__docs">
+                                    <div class="article__title-box permalink-trigger">
+                                        <a href="#closingClass" class="permalink permalink--small" aria-label="Move to closingClass option"></a>
+                                        <span class="article__specification">closingClass</span><span class="article__specification article__specification--addition">string</span>
+                                    </div>
+                                </h4>
+                                <p>The class name added for the modal window that is in the process of closing (required
+                                    for modals using CSS animations)</p>
+                                <p>By default: <code class="special">isClosing</code></p>
+                                <pre class="prism-code language-js">
+                                    <code>
+Keukenhof.init({
+    closingClass: 'is-closing',
+});</code>
+                                </pre>
+                            </li>
+                            <li class="article__step">
+                                <h4 id="hasAnimation" class="article__docs">
+                                    <div class="article__title-box permalink-trigger">
+                                        <a href="#hasAnimation" class="permalink permalink--small" aria-label="Move to hasAnimation option"></a>
+                                        <span class="article__specification">hasAnimation</span><span class="article__specification article__specification--addition">boolean</span>
+                                    </div>
+                                </h4>
+                                <p>Indicates the need to wait for the completion of the CSS animation of opening/closing
+                                    the modal window</p>
+                                <p>By default: <code class="special">false</code></p>
+                                <pre class="prism-code language-js">
+                                    <code>
+Keukenhof.init({
+    hasAnimation: true,
+});</code>
+                                </pre>
+                            </li>
+                            <li class="article__step">
+                                <h4 id="isAssignFocus" class="article__docs">
+                                    <div class="article__title-box permalink-trigger">
+                                        <a href="#isAssignFocus" class="permalink permalink--small" aria-label="Move to isAssignFocus option"></a>
+                                        <span class="article__specification">isAssignFocus</span><span class="article__specification article__specification--addition">boolean</span>
+                                    </div>
+                                </h4>
+                                <p>Indicates the need to focus on an interactive element inside the modal after opening
+                                </p>
+                                <p>By default: <code class="special">true</code></p>
+                                <pre class="prism-code language-js">
+                                    <code>
+Keukenhof.init({
+    isAssignFocus: false,
+});</code>
+                                </pre>
+                            </li>
+                            <li class="article__step">
+                                <h4 id="isFocusInside" class="article__docs">
+                                    <div class="article__title-box permalink-trigger">
+                                        <a href="#isFocusInside" class="permalink permalink--small" aria-label="Move to isFocusInside option"></a>
+                                        <span class="article__specification">isFocusInside</span><span class="article__specification article__specification--addition">boolean</span>
+                                    </div>
+                                </h4>
+                                <p>Indicates the need to restrict focusable interactive elements using the keyboard
+                                    inside the active modal
+                                </p>
+                                <p>By default: <code class="special">true</code></p>
+                                <pre class="prism-code language-js">
+                                    <code>
+Keukenhof.init({
+    isFocusInside: false,
+});</code>
+                                </pre>
+                            </li>
+                            <li class="article__step">
+                                <h4 id="scrollBehavior" class="article__docs">
+                                    <div class="article__title-box permalink-trigger">
+                                        <a href="#scrollBehavior" class="permalink permalink--small" aria-label="Move to scrollBehavior option"></a>
+                                        <span class="article__specification">scrollBehavior</span><span class="article__specification article__specification--addition">object</span>
+                                    </div>
+                                </h4>
+                                <p>Specify the need to block the scroll after opening a modal window. The
+                                    scroll is blocked with <code class="special">overflow: hidden;</code> if after
+                                    closing the modal the overflow value should be defined just specify this as <code class="special">defaultValue</code>
+                                </p>
+                                <p>By default: <code class="special">{ isDisabled: true, container: 'body', defaultValue: '' }</code>
+                                </p>
+                                <pre class="prism-code language-js">
+                                    <code>
+Keukenhof.init({
+    scrollBehavior: {
+        isDisabled: true,
+        container: '.wrapper',
+        defaultValue: '',
+    },
+});</code>
+                                </pre>
+                            </li>
+                            <li class="article__step">
+                                <h4 id="onOpen" class="article__docs">
+                                    <div class="article__title-box permalink-trigger">
+                                        <a href="#onOpen" class="permalink permalink--small" aria-label="Move to onOpen option"></a>
+                                        <span class="article__specification">onOpen</span><span class="article__specification article__specification--addition">function</span>
+                                    </div>
+                                </h4>
+                                <p>Defines a function that will be called when the modal is open (if <code class="special">hasAnimation: true</code> is called after the animation has
+                                    finished)</p>
+                                <p>By default: <code class="special">() => {}</code>
+                                </p>
+                                <pre class="prism-code language-js">
+                                    <code>
+Keukenhof.init({
+    onOpen: (event) => console.log('The modal window was opened', event),
+});</code>
+                                </pre>
+                            </li>
+                            <li class="article__step">
+                                <h4 id="onClose" class="article__docs">
+                                    <div class="article__title-box permalink-trigger">
+                                        <a href="#onClose" class="permalink permalink--small" aria-label="Move to onClose option"></a>
+                                        <span class="article__specification">onClose</span><span class="article__specification article__specification--addition">function</span>
+                                    </div>
+                                </h4>
+                                <p>Defines a function that will be called when the modal is close (if <code class="special">hasAnimation: true</code>
+                                    is called after the animation has
+                                    finished)</p>
+                                <p>By default: <code class="special">() => {}</code>
+                                </p>
+                                <pre class="prism-code language-js">
+                                    <code>
+Keukenhof.init({
+    onClose: (event) => console.log('The modal window was closed', event),
+});</code>
+                                </pre>
+                            </li>
+                            <li class="article__step">
+                                <h4 id="beforeOpen" class="article__docs">
+                                    <div class="article__title-box permalink-trigger">
+                                        <a href="#beforeOpen" class="permalink permalink--small" aria-label="Move to beforeOpen option"></a>
+                                        <span class="article__specification">beforeOpen</span><span class="article__specification article__specification--addition">function</span>
+                                    </div>
+                                </h4>
+                                <p>Defines a function to be called before the modal opens. If the function returns <code class="special">false</code>
+                                    the modal won't open</p>
+                                <p>By default: <code class="special">() => true</code>
+                                </p>
+                                <pre class="prism-code language-js">
+                                    <code>
+Keukenhof.init({
+    beforeOpen: (event) => {
+        if (counter > 10) return true;
+    },
+});</code>
+                                </pre>
+                            </li>
+                            <li class="article__step">
+                                <h4 id="beforeClose" class="article__docs">
+                                    <div class="article__title-box permalink-trigger">
+                                        <a href="#beforeClose" class="permalink permalink--small" aria-label="Move to beforeClose option"></a>
+                                        <span class="article__specification">beforeClose</span><span class="article__specification article__specification--addition">function</span>
+                                    </div>
+                                </h4>
+                                <p>Defines a function to be called before the modal closes. If the function returns
+                                    <code class="special">false</code>
+                                    the modal won't close</p>
+                                <p>By default: <code class="special">() => true</code>
+                                </p>
+                                <pre class="prism-code language-js">
+                                    <code>
+Keukenhof.init({
+    beforeClose: (event) => {
+        if (counter > 10) return true;
+    },
+});</code>
+                                </pre>
+                            </li>
+                        </ul>
+                    </div>
+                </article>
+                <article class="article">
+                    <div class="article__solid">
+                        <h2 id="api" class="article__title">
+                            <div class="article__title-box permalink-trigger">
+                                <a href="#api" class="permalink" aria-label="Move to API"></a>
+                                API
+                            </div>
+                        </h2>
+                        <ul class="article__steps">
+                            <li class="article__step">
+                                <h4 id="init" class="article__docs">
+                                    <div class="article__title-box permalink-trigger">
+                                        <a href="#init" class="permalink permalink--small" aria-label="
+                                    Move to init method"></a>
+                                        init()
+                                    </div>
+                                </h4>
+                                <p>Initializes all modals based on markup. Accepts one optional parameter for
+                                    configuration</p>
+                                <pre class="prism-code language-js">
+                                    <code>
+Keukenhof.init({
+    selector: "#modal-1",
+    openAttribute: "data-modal-open",
+    closeAttribute: "data-modal-close",
+    openClass: "is-open",
+    openingClass: "is-opening",
+    closingClass: "is-closing";
+    hasAnimation: true,
+    isAssignFocus: false,
+    isFocusInside: false,
+    scrollBehavior: {
+        isDisabled: true,
+    };
+    onOpen: () => console.log("The modal window is open"),
+    onClose: () => console.log("The modal window is close"),
+});</code>
+                                </pre>
+                            </li>
+                            <li class="article__step">
+                                <h4 id="open" class="article__docs">
+                                    <div class="article__title-box permalink-trigger">
+                                        <a href="#open" class="permalink permalink--small" aria-label="Move to open method"></a>
+                                        open()
+                                    </div>
+                                </h4>
+                                <p>Opens a modal window with the given selector. The <code class="special">open</code>
+                                    method has a second optional
+                                    parameter for configuration</p>
+                                <pre class="prism-code language-js">
+                                    <code>
+// With config
+Keukenhof.open("#modal", {
+    openAttribute: "data-modal-open",
+    closeAttribute: "data-modal-close",
+    openClass: "is-open",
+    openingClass: "is-opening",
+    closingClass: "is-closing";
+    hasAnimation: true,
+});
+
+// Without config
+Keukenhof.open("#modal");</code>
+                                </pre>
+                            </li>
+                            <li class="article__step">
+                                <h4 id="close" class="article__docs">
+                                    <div class="article__title-box permalink-trigger">
+                                        <a href="#close" class="permalink permalink--small" aria-label="Move to close method"></a>
+                                        close()
+                                    </div>
+                                </h4>
+                                <p>Closes the modal with the given selector. If no parameters are passed to the <code class="special">close</code> method, the currently open window will be closed.
+                                </p>
+                                <pre class="prism-code language-js">
+                                    <code>
+// With selector
+Keukenhof.close('#modal');
+
+// Without selector
+Keukenhof.close();</code>
+                                </pre>
+                            </li>
+                            <li class="article__step">
+                                <h4 id="types" class="article__docs">
+                                    <div class="article__title-box permalink-trigger">
+                                        <a href="#types" class="permalink permalink--small" aria-label="Move to API Types"></a>
+                                        Types
+                                    </div>
+                                </h4>
+                                <pre class="prism-code language-typescript">
+                                    <code>
+type ConfigType = {
+    selector?: string;
+    triggers?: HTMLElement[];
+    openAttribute?: string;
+    closeAttribute?: string;
+    openClass?: string;
+    openingClass?: string;
+    closingClass?: string;
+    hasAnimation?: boolean;
+    isAssignFocus?: boolean;
+    isFocusInside?: boolean;
+    scrollBehavior?: {
+        isDisabled?: boolean;
+        container?: string;
+        defaultValue?: string;
+    };
+    onOpen?: (event?: Event) => void;
+    onClose?: (event?: Event) => void;
+    beforeOpen?: (event?: Event) => boolean;
+    beforeClose?: (event?: Event) => boolean;
+};
+
+type KeukenhofType = {
+    init: (config?: ConfigType) => void;
+    open: (selector: string, config?: ConfigType) => void;
+    close: (selector?: string) => void;
+};</code>
+                                </pre>
+                            </li>
+                        </ul>
+                    </div>
+                </article>
+                <article class="article">
+                    <div class="article__solid">
+                        <h2 id="strengths" class="article__title">
+                            <div class="article__title-box permalink-trigger">
+                                <a href="#strengths" class="permalink" aria-label="
+                                            Move to Strengths"></a>
+                                Strengths
+                            </div>
+                        </h2>
+                        <ul class="check-list">
+                            <li class="check-list__item"><strong class="special">Lightweight</strong> just ~1.6kb
+                                minified and gzipped
+                            </li>
+                            <li class="check-list__item"><strong class="special">Easy to use</strong> you prepare a
+                                layout according to your needs
+                            </li>
+                            <li class="check-list__item"><strong class="special">No dependencies</strong> install only
+                                what you really need</li>
+                            <li class="check-list__item"><strong class="special">CSS animation support</strong> to
+                                implement transitions</li>
+                            <li class="check-list__item"><strong class="special">Full control</strong> over each process
+                                thanks to callback functions
+                                <code class="special">onOpen</code>,
+                                <code class="special">onClose</code>, <code class="special">beforeOpen</code>, <code class="special">beforeClose</code></li>
+                        </ul>
+                    </div>
+                </article>
+                <article class="article">
+                    <div class="article__solid article__solid--center">
+                        <h2 id="contributing" class="article__title">
+                            <div class="article__title-box permalink-trigger">
+                                <a href="#contributing" class="permalink" aria-label="
+                                                Move to Contributing"></a>
+                                Contributing
+                            </div>
+                        </h2>
+                        <p>Found a problem or want to contribute?<br>Please visit the <a href="https://github.com/Alexandrshy/keukenhof" rel="nofollow noreferrer">project page
+                                on GitHub</a></p>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="wrapper">
+            <p>Developed by <a href="https://twitter.com/alexandrshy" rel="nofollow noreferrer">@alexandrshy</a></p>
+        </div>
+    </footer>
+
+    <div id="modal" class="modal" role="dialog" aria-hidden="true" aria-labelledby="modal__title" aria-describedby="modal__description">
+        <div class="modal__overlay" tabindex="-1" data-keukenhof-close=""></div>
+        <div class="modal__container">
+            <header>
+                <button class="button button--close" aria-label="Close modal" data-keukenhof-close="">
+                    <svg role="presentation" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M13.41,12l4.3-4.29a1,1,0,1,0-1.42-1.42L12,10.59,7.71,6.29A1,1,0,0,0,6.29,7.71L10.59,12l-4.3,4.29a1,1,0,0,0,0,1.42,1,1,0,0,0,1.42,0L12,13.41l4.29,4.3a1,1,0,0,0,1.42,0,1,1,0,0,0,0-1.42Z"></path>
+                    </svg>
+                </button>
+            </header>
+
+            <main class="modal__main">
+                <h2 id="modal__title" class="modal__title">Keukenhof.js</h2>
+                <p id="modal__description">
+                    Lightweight and easy to use the library for modals with keyboard control support. Use the
+                    <code class="special">Tab</code> key to
+                    focus on an element or <code class="special">Esc</code> to close
+                </p>
+            </main>
+
+            <footer class="modal__footer">
+                <button class="button button--base">Okay</button>
+                <button class="button button--base" data-keukenhof-close="">Close</button>
+            </footer>
+        </div>
+    </div>
+
+    <script src="/scripts.bcf3243b.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,136 @@
+.article {
+    width: 100%;
+    padding: 50px 0;
+    border-bottom: 1px solid var(--black-25);
+}
+
+.article:last-child {
+    border-bottom: 0;
+}
+
+.article__example-box {
+    display: flex;
+    justify-content: center;
+    margin: 60px -20px 0;
+}
+
+.article__example {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+    margin: 0 20px;
+    background: var(--black-25);
+    border-radius: 10px;
+}
+
+.article__code {
+    width: 60%;
+    margin: 0 20px;
+}
+
+.article__title {
+    margin-bottom: 45px;
+    color: var(--pancho);
+    text-align: center;
+}
+
+.article__title-box {
+    position: relative;
+    display: inline-block;
+}
+
+.article__subtitle {
+    margin-bottom: 25px;
+    color: var(--pancho);
+    text-align: center;
+}
+
+.article__docs {
+    margin-bottom: 15px;
+    color: var(--pancho);
+}
+
+.article__solid {
+    margin: auto;
+    max-width: 750px;
+}
+
+.article__solid--center {
+    text-align: center;
+}
+
+.article__step {
+    margin-top: 45px;
+}
+
+.article__specification {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.article__specification:last-child {
+    margin-right: 0;
+}
+
+.article__specification--addition {
+    padding: 2px 8px;
+    background: var(--black-25);
+    border-radius: 4px;
+    color: var(--white);
+    font-weight: 400;
+    font-size: 21px;
+}
+
+@media (max-width: 992px) {
+    .article__title {
+        text-align: left;
+    }
+
+    .article__title-box {
+        display: block;
+    }
+}
+
+@media (max-width: 768px) {
+    .article {
+        padding: 35px 0;
+    }
+
+    .article__title {
+        margin-bottom: 25px;
+        font-size: 31px;
+    }
+
+    .article__title-box {
+        padding-right: 50px;
+    }
+
+    .article__example-box {
+        flex-wrap: wrap;
+        margin: 30px 0 0;
+    }
+
+    .article__example,
+    .article__code {
+        width: 100%;
+        margin: 0;
+    }
+
+    .article__example {
+        order: 2;
+        height: 160px;
+    }
+
+    .article__code {
+        margin-bottom: 35px;
+    }
+
+    .article__step {
+        margin-top: 35px;
+    }
+
+    .article__specification--addition {
+        font-size: 18px;
+    }
+}

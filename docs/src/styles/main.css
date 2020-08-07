@@ -1,0 +1,26 @@
+.main {
+    padding: 25px 0;
+}
+
+.main p {
+    color: var(--white);
+}
+
+.main p.special,
+.main span.special,
+.main strong.special {
+    color: var(--web-orange);
+}
+
+.main code.special {
+    padding: 2px 8px;
+    background: var(--black-25);
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+@media (max-width: 768px) {
+    .main {
+        padding: 15px 0;
+    }
+}

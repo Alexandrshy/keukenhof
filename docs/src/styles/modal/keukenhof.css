@@ -1,0 +1,136 @@
+.modal.isOpen {
+    display: flex;
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    min-width: 100vw;
+    min-height: 100vh;
+    font-size: 16px;
+}
+
+.modal.isOpen {
+    display: flex;
+}
+
+.button.button--base {
+    min-width: 110px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 0;
+    justify-content: center;
+}
+
+.button.button--close {
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+    width: 2.5rem;
+    height: 2.5rem;
+    padding: 0.435rem;
+    font-size: 0;
+    background-color: transparent;
+    box-shadow: none;
+}
+
+.button--close svg {
+    width: 100%;
+}
+
+.button--close path {
+    fill: var(--modal-close);
+    transition: fill 0.3s cubic-bezier(0.66, 0.28, 0.09, 0.53);
+}
+
+.button--close:focus path {
+    fill: var(--modal-close-active);
+}
+
+@media (hover: hover) {
+    .button.button--close:hover {
+        box-shadow: none;
+    }
+
+    .button--close:hover path {
+        fill: var(--modal-close-active);
+    }
+}
+
+.modal__overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--black-25);
+}
+
+.modal__container {
+    position: relative;
+    width: 100%;
+    max-width: 480px;
+    max-height: 100vh;
+    margin: auto 0.625rem;
+    padding: 3.5rem 3.125rem 2.5rem;
+    background-color: var(--modal-bg);
+    border-radius: 5px;
+    color: var(--modal-color);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+    overflow-y: auto;
+}
+
+@media (max-width: 420px) {
+    .modal__container {
+        padding: 2.8rem 1.25rem 2.185rem;
+    }
+}
+
+.modal__main {
+    margin-bottom: 2rem;
+}
+
+@media (max-width: 420px) {
+    .modal__main {
+        margin-bottom: 1.585rem;
+    }
+}
+
+.modal__title {
+    margin: 0 0 1.25rem;
+    font-size: 1.45rem;
+}
+
+@media (max-width: 420px) {
+    .modal__title {
+        margin: 0 0 1rem;
+        font-size: 1.3rem;
+    }
+}
+
+.modal.isOpening {
+    animation: fadeIn 0.2s cubic-bezier(0.66, 0.28, 0.09, 0.53);
+}
+
+.modal.isClosing {
+    animation: fadeIn 0.2s cubic-bezier(0.66, 0.28, 0.09, 0.53) 1 reverse;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}

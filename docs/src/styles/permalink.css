@@ -1,0 +1,54 @@
+.permalink {
+    position: absolute;
+    top: 3px;
+    left: -50px;
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+    background-image: url(../img/link.svg);
+    background-size: 25px 25px;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: opacity 0.15s ease;
+}
+
+.permalink--small {
+    top: -1px;
+    left: -45px;
+    width: 40px;
+    height: 40px;
+    padding: 5px;
+}
+
+@media (hover: hover) {
+    .permalink-trigger:hover .permalink {
+        opacity: 1;
+    }
+
+    .permalink {
+        opacity: 0;
+    }
+}
+
+@media (max-width: 992px) {
+    .permalink,
+    .permalink--small {
+        left: auto;
+        right: -10px;
+    }
+}
+
+@media (max-width: 768px) {
+    .permalink {
+        top: 2px;
+        width: 45px;
+        height: 45px;
+    }
+
+    .permalink--small {
+        top: -3px;
+        right: -7px;
+        width: 40px;
+        height: 40px;
+    }
+}

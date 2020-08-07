@@ -1,0 +1,28 @@
+.check-list__item {
+    position: relative;
+    padding-left: 40px;
+    margin-bottom: 25px;
+}
+
+.check-list__item:last-child {
+    margin-bottom: 0;
+}
+
+.check-list__item::before {
+    content: '';
+    position: absolute;
+    top: 2px;
+    left: 0;
+    width: 25px;
+    height: 25px;
+    background-image: url(../img/check.svg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+@media (max-width: 768px) {
+    .check-list__item {
+        margin-bottom: 15px;
+    }
+}

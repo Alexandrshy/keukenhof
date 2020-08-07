@@ -1,0 +1,66 @@
+.installation {
+    padding: 15px 0;
+    background-color: var(--web-orange);
+}
+
+.installation__box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.installation__list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.installation__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 320px;
+    margin: 0 4px;
+    font-size: 14px;
+    background-color: var(--cloud-burst);
+    border-radius: 4px;
+    color: var(--white);
+    overflow-x: auto;
+}
+
+.installation__title {
+    margin: 0 20px 0 0;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.installation__head {
+    padding: 10px 15px;
+    background-color: var(--black-25);
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.installation__value {
+    padding: 10px 15px;
+    color: var(--pancho);
+    white-space: nowrap;
+}
+
+@media (max-width: 992px) {
+    .installation__box,
+    .installation__list {
+        flex-flow: column;
+    }
+
+    .installation__item {
+        margin: 5px;
+    }
+
+    .installation__title {
+        margin: 0 0 10px;
+    }
+}

@@ -1,0 +1,35 @@
+{
+    "name": "@keukenhof/doc",
+    "version": "1.0.0",
+    "description": "Documentation site for Keukenhof.js",
+    "main": "index.js",
+    "scripts": {
+        "build": "yarn build:clean && yarn build:finish",
+        "build:clean": "rimraf dist",
+        "build:finish": "parcel build ./src/index.html",
+        "build:dev": "parcel ./src/index.html"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/Alexandrshy/keukenhof"
+    },
+    "author": "Alex Shualev <alexandrshy@gmail.com>",
+    "license": "MIT",
+    "keywords": [
+        "documentation"
+    ],
+    "bugs": {
+        "url": "https://github.com/Alexandrshy/keukenhof/issues"
+    },
+    "homepage": "https://github.com/Alexandrshy/keukenhof",
+    "devDependencies": {
+        "cssnano": "^4.1.10",
+        "keukenhof": "^1.10.2",
+        "parcel-bundler": "^1.12.4"
+    },
+    "dependencies": {
+        "autoprefixer": "^9.8.6",
+        "postcss-modules": "^3.2.0",
+        "prismjs": "^1.20.0"
+    }
+}
