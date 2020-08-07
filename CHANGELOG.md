@@ -1,3 +1,11 @@
+## [1.10.4](https://github.com/Alexandrshy/keukenhof/compare/v1.10.3...v1.10.4) (2020-08-07)
+
+
+### Bug Fixes
+
+* removed extra handlers ([158ddfa](https://github.com/Alexandrshy/keukenhof/commit/158ddfab0130691e787e1436509cf7c703d282cc))
+* updating types ([744579a](https://github.com/Alexandrshy/keukenhof/commit/744579a3ef3dfd0f1ca56463ef74934c190e5ca9))
+
 ## [1.10.3](https://github.com/Alexandrshy/keukenhof/compare/v1.10.2...v1.10.3) (2020-08-04)
 
 
