@@ -1,4 +1,4 @@
-import {ConfigType, ModalType, KeukenhofType} from './types';
+import {ConfigType, ConstructorType, ModalType, KeukenhofType} from './types';
 import {ATTRIBUTES, SCROLL_STATE, CLASS_NAMES, KEY, FOCUSING_ELEMENTS} from './consts';
 
 export const Keukenhof = ((): KeukenhofType => {
@@ -28,7 +28,7 @@ export const Keukenhof = ((): KeukenhofType => {
         /**
          * Modal constructor
          *
-         * @param {ConfigType} param - Config
+         * @param {ConstructorType} param - Config
          */
         constructor({
             selector = '',
@@ -46,7 +46,7 @@ export const Keukenhof = ((): KeukenhofType => {
             onClose = () => {},
             beforeOpen = () => true,
             beforeClose = () => true,
-        }: ConfigType) {
+        }: ConstructorType) {
             this.$modal = document.querySelector(selector);
 
             this.onOpen = onOpen;
@@ -348,9 +348,7 @@ export const Keukenhof = ((): KeukenhofType => {
 
         for (const selector in registeredMap) {
             const value = registeredMap[selector];
-            options.selector = selector;
-            options.triggers = [...value];
-            modal = new Modal(options);
+            modal = new Modal({...options, selector, triggers: [...value]});
         }
     };
 

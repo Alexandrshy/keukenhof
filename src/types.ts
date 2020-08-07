@@ -1,6 +1,26 @@
-export type ConfigType = {
+export type ConstructorType = {
     selector?: string;
     triggers?: HTMLElement[];
+    openAttribute?: string;
+    closeAttribute?: string;
+    openClass?: string;
+    openingClass?: string;
+    closingClass?: string;
+    hasAnimation?: boolean;
+    isAssignFocus?: boolean;
+    isFocusInside?: boolean;
+    scrollBehavior?: {
+        isDisabled?: boolean;
+        container?: string;
+        defaultValue?: string;
+    };
+    onOpen?: (event?: Event) => void;
+    onClose?: (event?: Event) => void;
+    beforeOpen?: (event?: Event) => boolean;
+    beforeClose?: (event?: Event) => boolean;
+};
+
+export type ConfigType = {
     openAttribute?: string;
     closeAttribute?: string;
     openClass?: string;
