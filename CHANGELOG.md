@@ -1,3 +1,10 @@
+## [1.10.8](https://github.com/Alexandrshy/keukenhof/compare/v1.10.7...v1.10.8) (2020-08-08)
+
+
+### Bug Fixes
+
+* added badges ([6b83372](https://github.com/Alexandrshy/keukenhof/commit/6b833728d677c8e086b4a5fc8b42a6da512570fb))
+
 ## [1.10.7](https://github.com/Alexandrshy/keukenhof/compare/v1.10.6...v1.10.7) (2020-08-08)
 
 
