@@ -24,7 +24,7 @@
 
 ### Package Manager
 
-[![https://www.npmjs.com/package/keukenhof](Keukenhof.js)] page on npm
+[Keukenhof.js](https://www.npmjs.com/package/keukenhof) page on npm
 
 ```bash
 # With npm
@@ -107,7 +107,7 @@ Keukenhof.close();
 
 ## Docs
 
-The documentation can also be found on the [![https://keukenhof.netlify.app/#options](keukenhof.js website)]
+The documentation can also be found on the [Keukenhof.js website](https://keukenhof.netlify.app/#options)
 
 | Options          | Type     | Description                                                                                                                                                                                                           |
 | ---------------- | -------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -191,4 +191,4 @@ Keukenhof.close();
 
 ## Licensing
 
-[![MIT license](http://opensource.org/licenses/MIT)]
+[MIT license](http://opensource.org/licenses/MIT)
