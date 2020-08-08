@@ -1,3 +1,10 @@
+## [1.10.6](https://github.com/Alexandrshy/keukenhof/compare/v1.10.5...v1.10.6) (2020-08-08)
+
+
+### Bug Fixes
+
+* fixed README links ([99777fa](https://github.com/Alexandrshy/keukenhof/commit/99777fa54da4fe52df0ef6cb4850a550e0885c3a))
+
 ## [1.10.5](https://github.com/Alexandrshy/keukenhof/compare/v1.10.4...v1.10.5) (2020-08-08)
 
 
