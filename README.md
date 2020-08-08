@@ -2,9 +2,21 @@
   <img src="https://user-images.githubusercontent.com/14329906/89714496-2ebf9380-d9b0-11ea-8646-8cae646c1e22.png" height="150px"/>
 </p>
 
-<h1 align="center">Keukenhof.js</h1>
+<h2 align="center">Keukenhof.js</h2>
 
 <h4 align="center">The lightweight library for modal windows</h4>
+
+<p align="center">
+  <a href="https://www.npmjs.com/package/keukenhof" target="_blank" rel="noopener">
+    <img src="https://img.shields.io/npm/v/keukenhof?style=for-the-badge" alt="npm version" />
+  </a>
+  <a href="https://opensource.org/licenses/MIT" target="_blank" rel="noopener">
+    <img src="https://img.shields.io/badge/license-MIT-blue.svg?style=for-the-badge&color=green" alt="License">
+  </a>
+  <a href="https://bundlephobia.com/result?p=keukenhof">
+    <img src="https://img.shields.io/bundlephobia/minzip/keukenhof?style=for-the-badge&color=orange&label=gzip" alt="gzip size">
+  </a>
+</p>
 
 ## Table of Contents
 
