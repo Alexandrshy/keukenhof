@@ -1,3 +1,11 @@
+## [1.10.5](https://github.com/Alexandrshy/keukenhof/compare/v1.10.4...v1.10.5) (2020-08-08)
+
+
+### Bug Fixes
+
+* added github templates ([7e20d79](https://github.com/Alexandrshy/keukenhof/commit/7e20d791947d7c1462cc1ab71892a90945b431bf))
+* fixed README ([b2722a7](https://github.com/Alexandrshy/keukenhof/commit/b2722a75dd9fd385eb7150651b975bc7bc8aa4c9))
+
 ## [1.10.4](https://github.com/Alexandrshy/keukenhof/compare/v1.10.3...v1.10.4) (2020-08-07)
 
 
