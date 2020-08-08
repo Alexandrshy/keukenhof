@@ -4,7 +4,7 @@
 
 <h1 align="center">Keukenhof.js</h1>
 
-The lightweight library for modal windows
+<h4 align="center">The lightweight library for modal windows</h4>
 
 ## Table of Contents
 
@@ -24,7 +24,7 @@ The lightweight library for modal windows
 
 ### Package Manager
 
-[https://www.npmjs.com/package/keukenhof](Keukenhof.js) page on npm
+[![https://www.npmjs.com/package/keukenhof](Keukenhof.js)] page on npm
 
 ```bash
 # With npm
@@ -107,7 +107,7 @@ Keukenhof.close();
 
 ## Docs
 
-The documentation can also be found on the [https://keukenhof.netlify.app/#options](keukenhof.js website)
+The documentation can also be found on the [![https://keukenhof.netlify.app/#options](keukenhof.js website)]
 
 | Options          | Type     | Description                                                                                                                                                                                                           |
 | ---------------- | -------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -191,4 +191,4 @@ Keukenhof.close();
 
 ## Licensing
 
-[MIT license](http://opensource.org/licenses/MIT)
+[![MIT license](http://opensource.org/licenses/MIT)]
