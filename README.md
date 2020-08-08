@@ -1,12 +1,10 @@
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/14329906/89714496-2ebf9380-d9b0-11ea-8646-8cae646c1e22.png" height="185px"/>
+  <img src="https://user-images.githubusercontent.com/14329906/89714496-2ebf9380-d9b0-11ea-8646-8cae646c1e22.png" height="150px"/>
 </p>
 
 <h1 align="center">Keukenhof.js</h1>
 
-<h2 align="center">The lightweight library for modal windows</h2>
-
----
+The lightweight library for modal windows
 
 ## Table of Contents
 
@@ -25,6 +23,8 @@
 ## Installation
 
 ### Package Manager
+
+[https://www.npmjs.com/package/keukenhof](Keukenhof.js) page on npm
 
 ```bash
 # With npm
