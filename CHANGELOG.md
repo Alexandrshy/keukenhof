@@ -1,3 +1,10 @@
+## [1.10.9](https://github.com/Alexandrshy/keukenhof/compare/v1.10.8...v1.10.9) (2020-08-08)
+
+
+### Bug Fixes
+
+* fixed title ([094afbc](https://github.com/Alexandrshy/keukenhof/commit/094afbcf2c8d731cc141be0ff1fe19540640f960))
+
 ## [1.10.8](https://github.com/Alexandrshy/keukenhof/compare/v1.10.7...v1.10.8) (2020-08-08)
 
 
