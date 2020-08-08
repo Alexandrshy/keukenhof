@@ -2,7 +2,7 @@
   <img src="https://user-images.githubusercontent.com/14329906/89714496-2ebf9380-d9b0-11ea-8646-8cae646c1e22.png" height="150px"/>
 </p>
 
-<h2 align="center">Keukenhof.js</h2>
+<h1 align="center">Keukenhof.js</h1>
 
 <h4 align="center">The lightweight library for modal windows</h4>
 
