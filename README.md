@@ -150,7 +150,7 @@ Keukenhof.init({
     closeAttribute: "data-modal-close",
     openClass: "is-open",
     openingClass: "is-opening",
-    closingClass: "is-closing";
+    closingClass: "is-closing",
     hasAnimation: true,
     isAssignFocus: false,
     isFocusInside: false,
@@ -168,17 +168,17 @@ Opens a modal window with the given selector. The `open()` method has a second o
 
 ```js
 // With config
-Keukenhof.open("#modal", {
-    openAttribute: "data-modal-open",
-    closeAttribute: "data-modal-close",
-    openClass: "is-open",
-    openingClass: "is-opening",
-    closingClass: "is-closing";
+Keukenhof.open('#modal', {
+    openAttribute: 'data-modal-open',
+    closeAttribute: 'data-modal-close',
+    openClass: 'is-open',
+    openingClass: 'is-opening',
+    closingClass: 'is-closing',
     hasAnimation: true,
 });
 
 // Without config
-Keukenhof.open("#modal");
+Keukenhof.open('#modal');
 ```
 
 ### close()
