@@ -1,3 +1,10 @@
+## [1.10.11](https://github.com/Alexandrshy/keukenhof/compare/v1.10.10...v1.10.11) (2020-08-09)
+
+
+### Bug Fixes
+
+* fixed typo in the docs ([92efad1](https://github.com/Alexandrshy/keukenhof/commit/92efad133a934f05e2cfd2928937ead6dc008803))
+
 ## [1.10.10](https://github.com/Alexandrshy/keukenhof/compare/v1.10.9...v1.10.10) (2020-08-09)
 
 
