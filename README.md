@@ -145,20 +145,20 @@ Initializes all modals based on markup. Accepts one optional parameter for confi
 
 ```js
 Keukenhof.init({
-    selector: "#modal-1",
-    openAttribute: "data-modal-open",
-    closeAttribute: "data-modal-close",
-    openClass: "is-open",
-    openingClass: "is-opening",
-    closingClass: "is-closing",
+    selector: '#modal-1',
+    openAttribute: 'data-modal-open',
+    closeAttribute: 'data-modal-close',
+    openClass: 'is-open',
+    openingClass: 'is-opening',
+    closingClass: 'is-closing',
     hasAnimation: true,
     isAssignFocus: false,
     isFocusInside: false,
     scrollBehavior: {
         isDisabled: true,
-    };
-    onOpen: () => console.log("The modal window is open"),
-    onClose: () => console.log("The modal window is close"),
+    },
+    onOpen: () => console.log('The modal window is open'),
+    onClose: () => console.log('The modal window is close'),
 });
 ```
 
