@@ -1,5 +1,5 @@
 {
-    "name": "@keukenhof/doc",
+    "name": "@keukenhof/docs",
     "version": "1.0.0",
     "description": "Documentation site for Keukenhof.js",
     "main": "index.js",
