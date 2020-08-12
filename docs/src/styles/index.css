@@ -119,8 +119,10 @@ a {
     transition: color var(--animation);
 }
 
-a:hover {
-    color: var(--pancho);
+@media (hover: hover) {
+    a:hover {
+        color: var(--pancho);
+    }
 }
 
 svg,

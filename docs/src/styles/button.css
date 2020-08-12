@@ -28,12 +28,14 @@
     transition: stroke var(--animation);
 }
 
-.button:hover {
-    background-color: var(--web-orange);
-    color: var(--white);
-    box-shadow: 0px 8px 18px -5px var(--web-orange-rgba-45);
-}
+@media (hover: hover) {
+    .button:hover {
+        background-color: var(--web-orange);
+        color: var(--white);
+        box-shadow: 0px 8px 18px -5px var(--web-orange-rgba-45);
+    }
 
-.button:hover .button__icon {
-    stroke: var(--white);
+    .button:hover .button__icon {
+        stroke: var(--white);
+    }
 }
