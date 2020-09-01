@@ -1,0 +1,47 @@
+@import '../../../common.css';
+
+@import './animation.css';
+@import './button.css';
+@import './footer.css';
+@import './icon.css';
+@import './link.css';
+@import './main.css';
+@import './overlay.css';
+
+:root {
+    --font-poppins: 'Poppins', Arial, sans-serif;
+    --font-weight-regular: 400;
+    --font-weight-bold: 700;
+    --animation: cubic-bezier(0.66, 0.28, 0.09, 0.53);
+
+    --white-rgba-6: rgba(255, 255, 255, 0.6);
+    --gallery: #eeeeee;
+    --gallery-rgba-4: rgba(238, 238, 238, 0.4);
+    --pink-swan: #c3bbbb;
+    --bright-gray: #393e46;
+    --desert-sand: #ebcbae;
+
+    --modal-button: var(--gallery);
+    --modal-button-color: var(--bright-gray);
+    --modal-focus: var(--gallery-rgba-4);
+    --modal-close: var(--gallery-rgba-4);
+    --modal-close-active: var(--gallery);
+    --modal-overlay: var(--white-rgba-6);
+    --modal-bg: var(--bright-gray);
+    --modal-icon: var(--desert-sand);
+    --modal-link: var(--pink-swan);
+    --modal-link-hover: var(--gallery);
+    --modal-color: var(--gallery);
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    justify-content: center;
+    align-items: center;
+    min-width: 100vw;
+    min-height: 100vh;
+}

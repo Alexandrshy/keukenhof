@@ -1,0 +1,47 @@
+/* Animation */
+
+.modal.isOpening {
+    animation: fadeIn 0.35s var(--animation);
+}
+
+.modal.isClosing {
+    animation: fadeIn 0.35s var(--animation) 1 reverse;
+}
+
+.modal.isOpening .modal__container {
+    animation: downUp 0.35s var(--animation);
+}
+
+.modal.isClosing .modal__container {
+    animation: centerUp 0.35s var(--animation);
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes centerUp {
+    0% {
+        transform: translateY(0%);
+    }
+
+    100% {
+        transform: translateY(-10%);
+    }
+}
+
+@keyframes downUp {
+    0% {
+        transform: translateY(10%);
+    }
+
+    100% {
+        transform: translateY(0%);
+    }
+}

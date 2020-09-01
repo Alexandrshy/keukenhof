@@ -1,0 +1,15 @@
+.modal__link {
+    color: var(--modal-link);
+    transition: color 0.3s var(--animation);
+}
+
+.modal__link:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px var(--modal-focus);
+}
+
+@media (hover: hover) {
+    .modal__link:hover {
+        color: var(--modal-link-hover);
+    }
+}

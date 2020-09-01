@@ -1,0 +1,36 @@
+{
+    "name": "@keukenhof/options",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "build": "yarn build:clean && yarn build:finish",
+        "build:clean": "rimraf dist",
+        "build:finish": "parcel build ./themes/**/*.html",
+        "build:dev": "yarn build:clean && parcel ./themes/**/*.html"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/Alexandrshy/keukenhof"
+    },
+    "author": "Alex Shualev <alexandrshy@gmail.com>",
+    "license": "MIT",
+    "keywords": [
+        "options",
+        "examples"
+    ],
+    "bugs": {
+        "url": "https://github.com/Alexandrshy/keukenhof/issues"
+    },
+    "homepage": "https://github.com/Alexandrshy/keukenhof",
+    "devDependencies": {
+        "cssnano": "^4.1.10",
+        "keukenhof": "^1.10.2",
+        "parcel-bundler": "^1.12.4"
+    },
+    "dependencies": {
+        "autoprefixer": "^9.8.6",
+        "postcss-modules": "^3.2.0",
+        "prismjs": "^1.21.0"
+    }
+}

@@ -1,0 +1,12 @@
+.modal__footer {
+    width: 100%;
+    max-width: 165px;
+    text-align: right;
+}
+
+@media (max-width: 768px) {
+    .modal__footer {
+        max-width: 100%;
+        text-align: left;
+    }
+}
