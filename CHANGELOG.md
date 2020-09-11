@@ -1,3 +1,11 @@
+## [1.11.1](https://github.com/Alexandrshy/keukenhof/compare/v1.11.0...v1.11.1) (2020-09-11)
+
+
+### Bug Fixes
+
+* removed package-lock ([c919795](https://github.com/Alexandrshy/keukenhof/commit/c919795ca3406508329f0038d5a64466f6b19889))
+* removed package-lock ([705cb61](https://github.com/Alexandrshy/keukenhof/commit/705cb615d4549c0dc740159e542c1ae99d03fd57))
+
 # [1.11.0](https://github.com/Alexandrshy/keukenhof/compare/v1.10.11...v1.11.0) (2020-09-01)
 
 
