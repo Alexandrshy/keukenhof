@@ -1,3 +1,21 @@
+## [1.11.3](https://github.com/Alexandrshy/keukenhof/compare/v1.11.2...v1.11.3) (2020-09-11)
+
+
+### Bug Fixes
+
+* [security] bump node-fetch from 2.6.0 to 2.6.1 ([bbcda40](https://github.com/Alexandrshy/keukenhof/commit/bbcda402d8ff937593688e2e284635972121e36e))
+* bump @babel/preset-env from 7.11.0 to 7.11.5 ([266c5b6](https://github.com/Alexandrshy/keukenhof/commit/266c5b6fa1bbcc01c33d2119c93a34bc9aeeac05))
+* bump @rollup/plugin-babel from 5.1.0 to 5.2.0 ([172847e](https://github.com/Alexandrshy/keukenhof/commit/172847ed22d0d809b61f9764c1eef2caab6966b4))
+* bump @rollup/plugin-commonjs from 12.0.0 to 15.0.0 ([67dbc2b](https://github.com/Alexandrshy/keukenhof/commit/67dbc2b8b73cee7d80761a7d72891404651e8a70))
+* bump @typescript-eslint/parser from 3.8.0 to 3.10.1 ([48ec658](https://github.com/Alexandrshy/keukenhof/commit/48ec658efc11a54b12deab0367bb6ab1b2227d11))
+* bump eslint from 7.6.0 to 7.8.1 ([423ce6b](https://github.com/Alexandrshy/keukenhof/commit/423ce6b14ecdd532ee03a5ade59a164ed6f34c04))
+* bump eslint-plugin-jsdoc from 26.0.2 to 30.4.0 ([aad15cb](https://github.com/Alexandrshy/keukenhof/commit/aad15cbc7527f8bfb1cb9eccb711dc26b3e096fc))
+* bump lint-staged from 10.2.13 to 10.3.0 ([1d46ab0](https://github.com/Alexandrshy/keukenhof/commit/1d46ab0e7ce5858f2b32d8a056c88d785942e5bb))
+* bump rollup from 2.23.0 to 2.26.11 ([f0dd4db](https://github.com/Alexandrshy/keukenhof/commit/f0dd4dbf3a437c4e1402a4a98c1425091759781d))
+* bump rollup-plugin-livereload from 1.3.0 to 2.0.0 ([f4f22c1](https://github.com/Alexandrshy/keukenhof/commit/f4f22c170013f4d261e24d73321bc1cfcf160d36))
+* bump rollup-plugin-terser from 7.0.1 to 7.0.2 ([1fb68b7](https://github.com/Alexandrshy/keukenhof/commit/1fb68b7dd389dd3ded63571dd031933ebd764b46))
+* removed package-lock ([9e2c32e](https://github.com/Alexandrshy/keukenhof/commit/9e2c32e03f867e419a4aab0fd6871ae4227e89d1))
+
 ## [1.11.2](https://github.com/Alexandrshy/keukenhof/compare/v1.11.1...v1.11.2) (2020-09-11)
 
 
