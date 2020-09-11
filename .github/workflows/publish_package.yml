@@ -22,7 +22,7 @@ jobs:
           scope: "@Alexandrshy"
 
       - name: Install dependencies
-        run: yarn i
+        run: yarn install
 
       - name: Build
         run: yarn build
