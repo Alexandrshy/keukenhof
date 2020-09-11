@@ -1,3 +1,24 @@
+# [1.11.0](https://github.com/Alexandrshy/keukenhof/compare/v1.10.11...v1.11.0) (2020-09-01)
+
+
+### Bug Fixes
+
+* added rimraf ([5f556a5](https://github.com/Alexandrshy/keukenhof/commit/5f556a57910d7abc8bb2d1961064334ca99abc17))
+* bump @babel/core from 7.11.0 to 7.11.4 ([2644fa7](https://github.com/Alexandrshy/keukenhof/commit/2644fa7b647e78d1bddf8e966f006f045fca4532))
+* bump @commitlint/cli from 8.3.5 to 9.1.2 ([9085eb7](https://github.com/Alexandrshy/keukenhof/commit/9085eb734855c8042c81469b7476d6ca4a486c00))
+* bump @commitlint/config-conventional from 8.3.4 to 9.1.2 ([826d5c8](https://github.com/Alexandrshy/keukenhof/commit/826d5c8c739f52f061557b2d4272a4ebd42e3cae))
+* bump lint-staged from 10.2.11 to 10.2.13 ([8a8012e](https://github.com/Alexandrshy/keukenhof/commit/8a8012e047377c1ba756a4a4ca3d3189373fca8e))
+* bump prettier from 2.0.5 to 2.1.1 ([e9fbbf9](https://github.com/Alexandrshy/keukenhof/commit/e9fbbf9253ff9ade3501d9b9bd1a00214f71c635))
+* bump rollup-plugin-serve from 1.0.3 to 1.0.4 ([78165e0](https://github.com/Alexandrshy/keukenhof/commit/78165e07f898d52fb5f55ca9b5597091ee5d7659))
+* bump rollup-plugin-terser from 6.1.0 to 7.0.1 ([f7f16cb](https://github.com/Alexandrshy/keukenhof/commit/f7f16cbebfc9f375c80beb07f775a54995f4982f))
+* bump rollup-plugin-typescript2 from 0.27.1 to 0.27.2 ([0dc9737](https://github.com/Alexandrshy/keukenhof/commit/0dc9737a801465525fa7433f9082ce38a7c01be9))
+* bump typescript from 3.9.7 to 4.0.2 ([295faa2](https://github.com/Alexandrshy/keukenhof/commit/295faa2302afaf20dd5e64f2f25d2f133c73fa3c))
+
+
+### Features
+
+* moved examples to options ([00f9f1a](https://github.com/Alexandrshy/keukenhof/commit/00f9f1ac35e86d92b0e8c47371b9c17d2e0e3789))
+
 ## [1.10.11](https://github.com/Alexandrshy/keukenhof/compare/v1.10.10...v1.10.11) (2020-08-09)
 
 
