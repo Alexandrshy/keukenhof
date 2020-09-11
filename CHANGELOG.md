@@ -1,3 +1,11 @@
+## [1.11.2](https://github.com/Alexandrshy/keukenhof/compare/v1.11.1...v1.11.2) (2020-09-11)
+
+
+### Bug Fixes
+
+* fixed workflows ([1275e7e](https://github.com/Alexandrshy/keukenhof/commit/1275e7e19d636725efb88e9fbedf1ac32143ab41))
+* fixed workflows ([0732590](https://github.com/Alexandrshy/keukenhof/commit/073259017a330fb40ff5c3a5a60aca2a1be162cc))
+
 ## [1.11.1](https://github.com/Alexandrshy/keukenhof/compare/v1.11.0...v1.11.1) (2020-09-11)
 
 
