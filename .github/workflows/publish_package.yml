@@ -22,10 +22,10 @@ jobs:
           scope: "@Alexandrshy"
 
       - name: Install dependencies
-        run: npm i
+        run: yarn i
 
       - name: Build
-        run: npm run build
+        run: yarn build
 
       - name: Semantic Release
         uses: cycjimmy/semantic-release-action@v2

@@ -15,5 +15,5 @@ jobs:
       env:
         GH_TOKEN: ${{ secrets.GH_TOKEN }}
       run: |
-        npm i
-        npm run finish
+        yarn i
+        yarn finish
