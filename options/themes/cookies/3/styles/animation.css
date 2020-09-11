@@ -1,0 +1,17 @@
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.modal.isOpening {
+    animation: fadeIn 0.2s var(--animation);
+}
+
+.modal.isClosing {
+    animation: fadeIn 0.2s var(--animation) 1 reverse;
+}

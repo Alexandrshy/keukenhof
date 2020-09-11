@@ -1,3 +1,0 @@
-Keukenhof.init({
-    hasAnimation: true,
-});

@@ -21,6 +21,11 @@ img {
     max-width: 100%;
 }
 
+.modal {
+    display: none;
+    font-size: 16px;
+}
+
 .modal.isOpen {
     display: flex;
 }

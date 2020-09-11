@@ -1,0 +1,9 @@
+.modal__icon {
+    width: 100%;
+    max-width: 3.75rem;
+    margin-bottom: 0.635rem;
+}
+
+.modal__icon path {
+    fill: var(--modal-icon);
+}
