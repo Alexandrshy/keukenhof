@@ -1,3 +1,20 @@
+## [1.11.4](https://github.com/Alexandrshy/keukenhof/compare/v1.11.3...v1.11.4) (2020-09-17)
+
+
+### Bug Fixes
+
+* bump @commitlint/config-conventional from 9.1.2 to 11.0.0 ([741ec91](https://github.com/Alexandrshy/keukenhof/commit/741ec91f8a93815c21162a24bdf10770138b73e2))
+* bump @rollup/plugin-babel from 5.2.0 to 5.2.1 ([49560a7](https://github.com/Alexandrshy/keukenhof/commit/49560a784c9830be273750ec369a3fe255eacb5a))
+* bump @rollup/plugin-node-resolve from 8.0.1 to 9.0.0 ([49a983c](https://github.com/Alexandrshy/keukenhof/commit/49a983ca8e05981fde03a98eea5c240f1d950022))
+* bump @semantic-release/npm from 7.0.5 to 7.0.6 ([4dc2099](https://github.com/Alexandrshy/keukenhof/commit/4dc20995382d1af5fe59ea154ac25f1c6de2198e))
+* bump @typescript-eslint/eslint-plugin from 3.1.0 to 4.0.0 ([3894e80](https://github.com/Alexandrshy/keukenhof/commit/3894e80e75870a2a07d24dc88e1dc9c8bfb35d8a))
+* bump eslint from 7.8.1 to 7.9.0 ([5c4b662](https://github.com/Alexandrshy/keukenhof/commit/5c4b662406a6ca1503bbdceecdf35cf7dda30513))
+* bump eslint-plugin-jsdoc from 30.4.0 to 30.4.2 ([f88c3fc](https://github.com/Alexandrshy/keukenhof/commit/f88c3fc12b7074f200586a367360e95f767f94e7))
+* bump eslint-plugin-jsdoc from 30.4.0 to 30.5.1 ([2402f42](https://github.com/Alexandrshy/keukenhof/commit/2402f42d0b304dba0ac26bb9d43e1aa17f7f0a8c))
+* bump eslint-plugin-prettier from 3.1.3 to 3.1.4 ([eed4d5b](https://github.com/Alexandrshy/keukenhof/commit/eed4d5bad2964256299c8db2c55a5177b4161de4))
+* bump husky from 4.2.5 to 4.3.0 ([9480cea](https://github.com/Alexandrshy/keukenhof/commit/9480cea6248ebffbbdd74ef1ccb4a7d6fed4361f))
+* bump semantic-release from 17.0.8 to 17.1.1 ([b637f2b](https://github.com/Alexandrshy/keukenhof/commit/b637f2b714f39207533a4a7a806db533645c7e4b))
+
 ## [1.11.3](https://github.com/Alexandrshy/keukenhof/compare/v1.11.2...v1.11.3) (2020-09-11)
 
 
