@@ -1,3 +1,17 @@
+## [1.11.5](https://github.com/Alexandrshy/keukenhof/compare/v1.11.4...v1.11.5) (2020-09-25)
+
+
+### Bug Fixes
+
+* bump @babel/core from 7.11.4 to 7.11.6 ([22c2071](https://github.com/Alexandrshy/keukenhof/commit/22c2071f8271476b09ad64e953fc4fa630bc4d12))
+* bump @babel/preset-typescript from 7.10.1 to 7.10.4 ([6a278b5](https://github.com/Alexandrshy/keukenhof/commit/6a278b53e13a371f23617e1c37f3dd081981ec93))
+* bump @commitlint/cli from 9.1.2 to 11.0.0 ([c850d95](https://github.com/Alexandrshy/keukenhof/commit/c850d9579f6cbb96243ca6df70edd77eec63f189))
+* bump lint-staged from 10.3.0 to 10.4.0 ([daf7b97](https://github.com/Alexandrshy/keukenhof/commit/daf7b97a180613d35c5ce710e36ec178826d2752))
+* bump prettier from 2.1.1 to 2.1.2 ([8985a33](https://github.com/Alexandrshy/keukenhof/commit/8985a33b14f3232f2be9d8aa13c456ac4613a2ad))
+* bump rollup from 2.26.11 to 2.27.1 ([f7266c6](https://github.com/Alexandrshy/keukenhof/commit/f7266c64d8f01af745a8dd12acff385836dad1f0))
+* bump semantic-release from 17.1.1 to 17.1.2 ([e67d450](https://github.com/Alexandrshy/keukenhof/commit/e67d450c24d08173c428f8fe266fa2f3514204c4))
+* bump typescript from 4.0.2 to 4.0.3 ([41949d6](https://github.com/Alexandrshy/keukenhof/commit/41949d62e7bbb0e6346610ad48c442c1ea65412c))
+
 ## [1.11.4](https://github.com/Alexandrshy/keukenhof/compare/v1.11.3...v1.11.4) (2020-09-17)
 
 
