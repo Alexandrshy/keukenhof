@@ -1,3 +1,19 @@
+## [1.11.7](https://github.com/Alexandrshy/keukenhof/compare/v1.11.6...v1.11.7) (2020-11-21)
+
+
+### Bug Fixes
+
+* [security] bump semantic-release from 17.2.1 to 17.2.3 ([d79c126](https://github.com/Alexandrshy/keukenhof/commit/d79c12666413b8bd8e0548bca7a917fad2c78ce2))
+* bump @babel/preset-env from 7.11.5 to 7.12.1 ([e9e5f48](https://github.com/Alexandrshy/keukenhof/commit/e9e5f48d768c297fa835de5e61e756ebcff67549))
+* bump @babel/preset-typescript from 7.10.4 to 7.12.7 ([eebb000](https://github.com/Alexandrshy/keukenhof/commit/eebb000edc033b1e4f99f5955ec5cedde7622624))
+* bump @rollup/plugin-commonjs from 15.1.0 to 16.0.0 ([9f0392d](https://github.com/Alexandrshy/keukenhof/commit/9f0392d2876e2e1209af1c931ec2b8ff3cbf51b1))
+* bump @rollup/plugin-node-resolve from 9.0.0 to 10.0.0 ([fc876df](https://github.com/Alexandrshy/keukenhof/commit/fc876dfaf82c2c7b2edd34be418474b55cf31d06))
+* bump eslint from 7.11.0 to 7.14.0 ([1578011](https://github.com/Alexandrshy/keukenhof/commit/157801165c89d4ab6b310910210edb24a3d949da))
+* bump eslint-config-prettier from 6.14.0 to 6.15.0 ([5213a72](https://github.com/Alexandrshy/keukenhof/commit/5213a7263d0ee29da96f685aeb37eaf318f1dbef))
+* bump eslint-plugin-jsdoc from 30.6.5 to 30.7.8 ([2349224](https://github.com/Alexandrshy/keukenhof/commit/234922446a4e8e030e8e421be7913e3957aa8ac7))
+* bump rollup from 2.32.1 to 2.33.3 ([16a8190](https://github.com/Alexandrshy/keukenhof/commit/16a8190d26c0fe4cf33063ef6a1c25c2d9e98a0b))
+* bump typescript from 4.0.3 to 4.1.2 ([3b941a4](https://github.com/Alexandrshy/keukenhof/commit/3b941a46620d81338cdbee5993209445705d746e))
+
 ## [1.11.6](https://github.com/Alexandrshy/keukenhof/compare/v1.11.5...v1.11.6) (2020-10-24)
 
 
