@@ -1,3 +1,14 @@
+## [1.11.8](https://github.com/Alexandrshy/keukenhof/compare/v1.11.7...v1.11.8) (2021-01-11)
+
+
+### Bug Fixes
+
+* bump prettier from 2.1.2 to 2.2.1 ([c5ae897](https://github.com/Alexandrshy/keukenhof/commit/c5ae897ecd5068849dbae6b92cf5f79434ba068d))
+* bump rollup from 2.33.3 to 2.35.1 ([a697233](https://github.com/Alexandrshy/keukenhof/commit/a6972339c9bd81f2453916f76297878ed4d0e616))
+* bump rollup-plugin-serve from 1.0.4 to 1.1.0 ([9188ffc](https://github.com/Alexandrshy/keukenhof/commit/9188ffcc86a89698560396f2398ecf310059f068))
+* bump rollup-plugin-typescript2 from 0.28.0 to 0.29.0 ([34dabde](https://github.com/Alexandrshy/keukenhof/commit/34dabde360497f497a63167ff4656c4e85dc9b96))
+* bump semantic-release from 17.2.3 to 17.3.1 ([a1876ff](https://github.com/Alexandrshy/keukenhof/commit/a1876ff799e2a46ac1e5277fcad2366668cabcd5))
+
 ## [1.11.7](https://github.com/Alexandrshy/keukenhof/compare/v1.11.6...v1.11.7) (2020-11-21)
 
 
