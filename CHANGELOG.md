@@ -1,3 +1,11 @@
+## [1.11.10](https://github.com/Alexandrshy/keukenhof/compare/v1.11.9...v1.11.10) (2022-01-27)
+
+
+### Bug Fixes
+
+* added codeql-analysis ([ac6e366](https://github.com/Alexandrshy/keukenhof/commit/ac6e366572a2b76337022aac876311b149c39eb4))
+* added SECURITY ([64ba9d4](https://github.com/Alexandrshy/keukenhof/commit/64ba9d4fb439c51530943fab37ee1e07ab3ae8fd))
+
 ## [1.11.9](https://github.com/Alexandrshy/keukenhof/compare/v1.11.8...v1.11.9) (2022-01-27)
 
 
