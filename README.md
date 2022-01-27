@@ -30,7 +30,7 @@
 
 ## Demo
 
-[![Keukenhof.js visualized](https://user-images.githubusercontent.com/14329906/89715344-25392a00-d9b6-11ea-8751-0b570e0368c5.gif)](https://keukenhof.netlify.app/#example)
+[![Keukenhof.js visualized](https://user-images.githubusercontent.com/14329906/89715344-25392a00-d9b6-11ea-8751-0b570e0368c5.gif)](https://keukenhof.vercel.app/#example)
 
 ## Installation
 
@@ -119,7 +119,7 @@ Keukenhof.close();
 
 ## Docs
 
-The documentation can also be found on the [Keukenhof.js website](https://keukenhof.netlify.app/#options)
+The documentation can also be found on the [Keukenhof.js website](https://keukenhof.vercel.app/#options)
 
 | Options          | Type     | Description                                                                                                                                                                                                           |
 | ---------------- | -------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
