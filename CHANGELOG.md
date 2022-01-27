@@ -1,3 +1,10 @@
+## [1.11.11](https://github.com/Alexandrshy/keukenhof/compare/v1.11.10...v1.11.11) (2022-01-27)
+
+
+### Bug Fixes
+
+* added npmrc ([365a5a9](https://github.com/Alexandrshy/keukenhof/commit/365a5a9a9fa8a57251eec97ae5f67c41a88d2634))
+
 ## [1.11.10](https://github.com/Alexandrshy/keukenhof/compare/v1.11.9...v1.11.10) (2022-01-27)
 
 
