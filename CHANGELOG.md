@@ -1,3 +1,11 @@
+## [1.11.14](https://github.com/Alexandrshy/keukenhof/compare/v1.11.13...v1.11.14) (2022-01-27)
+
+
+### Bug Fixes
+
+* bump @rollup/plugin-babel from 5.2.1 to 5.3.0 ([1814526](https://github.com/Alexandrshy/keukenhof/commit/181452641d58e4bd949ef9c4dd97fc292cc8aa4e))
+* bump @rollup/plugin-node-resolve from 10.0.0 to 11.2.1 ([0fc4327](https://github.com/Alexandrshy/keukenhof/commit/0fc4327276f21a4a28a15ffd8d6efdc7887c141b))
+
 ## [1.11.13](https://github.com/Alexandrshy/keukenhof/compare/v1.11.12...v1.11.13) (2022-01-27)
 
 
