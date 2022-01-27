@@ -1,3 +1,15 @@
+## [1.11.13](https://github.com/Alexandrshy/keukenhof/compare/v1.11.12...v1.11.13) (2022-01-27)
+
+
+### Bug Fixes
+
+* [security] bump handlebars from 4.7.6 to 4.7.7 ([d873c58](https://github.com/Alexandrshy/keukenhof/commit/d873c585883ad109fdcf1a7e8121be217805a846))
+* [security] bump hosted-git-info from 2.8.8 to 2.8.9 ([9f05778](https://github.com/Alexandrshy/keukenhof/commit/9f05778330e06dcb07dfa896e53ad2a6c5171ca3))
+* [security] bump ini from 1.3.5 to 1.3.8 ([d178bcd](https://github.com/Alexandrshy/keukenhof/commit/d178bcdd2c3263e7ec60b6a1246ee847ceb74efb))
+* [security] bump lodash from 4.17.20 to 4.17.21 ([9399417](https://github.com/Alexandrshy/keukenhof/commit/93994175282b9f856d3106d40150b8bcc5959bc9))
+* [security] bump ssri from 6.0.1 to 6.0.2 ([9a97892](https://github.com/Alexandrshy/keukenhof/commit/9a97892a963b9773ab89b0c6b253c0fadc5aefa9))
+* [security] bump y18n from 3.2.1 to 3.2.2 ([0b7e46c](https://github.com/Alexandrshy/keukenhof/commit/0b7e46cca44242676933f9a7e2a0cb9df81af570))
+
 ## [1.11.12](https://github.com/Alexandrshy/keukenhof/compare/v1.11.11...v1.11.12) (2022-01-27)
 
 
