@@ -1,3 +1,10 @@
+## [1.11.12](https://github.com/Alexandrshy/keukenhof/compare/v1.11.11...v1.11.12) (2022-01-27)
+
+
+### Bug Fixes
+
+* [security] bump browserslist from 4.12.0 to 4.16.6 ([916044c](https://github.com/Alexandrshy/keukenhof/commit/916044c6ac0f31a193fbe2253ddd97494eb1ebd1))
+
 ## [1.11.11](https://github.com/Alexandrshy/keukenhof/compare/v1.11.10...v1.11.11) (2022-01-27)
 
 
