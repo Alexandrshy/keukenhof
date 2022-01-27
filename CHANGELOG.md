@@ -1,3 +1,11 @@
+## [1.11.9](https://github.com/Alexandrshy/keukenhof/compare/v1.11.8...v1.11.9) (2022-01-27)
+
+
+### Bug Fixes
+
+* change doc url ([c90a615](https://github.com/Alexandrshy/keukenhof/commit/c90a615d57fb1898868096972da51968286fb32b))
+* fixed the link in the docs ([c21b739](https://github.com/Alexandrshy/keukenhof/commit/c21b73924ce65bfc244d3074b4147a210b43293f))
+
 ## [1.11.8](https://github.com/Alexandrshy/keukenhof/compare/v1.11.7...v1.11.8) (2021-01-11)
 
 
