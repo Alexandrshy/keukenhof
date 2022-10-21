@@ -1,3 +1,10 @@
+## [1.11.15](https://github.com/Alexandrshy/keukenhof/compare/v1.11.14...v1.11.15) (2022-10-21)
+
+
+### Bug Fixes
+
+* removed unused dep ([4c83f72](https://github.com/Alexandrshy/keukenhof/commit/4c83f72c9fd21ef2e23d3e88d433db232750bdc1))
+
 ## [1.11.14](https://github.com/Alexandrshy/keukenhof/compare/v1.11.13...v1.11.14) (2022-01-27)
 
 
