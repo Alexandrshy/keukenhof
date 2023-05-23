@@ -25,7 +25,7 @@
     "devDependencies": {
         "cssnano": "^4.1.10",
         "keukenhof": "^1.10.2",
-        "parcel-bundler": "^1.12.4"
+        "parcel-bundler": "^1.12.5"
     },
     "dependencies": {
         "autoprefixer": "^9.8.6",
