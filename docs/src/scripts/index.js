@@ -1,6 +1,5 @@
 import {Keukenhof} from 'keukenhof';
-import 'prismjs/components/prism-typescript';
-import 'prismjs/components/prism-bash';
+import Prism from "prismjs";
 
 Keukenhof.init({
     hasAnimation: true,
