@@ -6,7 +6,7 @@
     "scripts": {
         "build": "yarn build:clean && yarn build:finish",
         "build:clean": "rimraf dist",
-        "build:finish": "parcel build --no-optimize ./src/index.html",
+        "build:finish": "parcel build ./src/index.html",
         "build:dev": "parcel ./src/index.html"
     },
     "repository": {
